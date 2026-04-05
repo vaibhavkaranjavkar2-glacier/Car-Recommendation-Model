@@ -1,0 +1,501 @@
+id,name,brand,price,mileage,fuel_type,transmission,seating_capacity,body_type,rating,use_case,features,engine_cc,safety_rating,year,image_url,variant
+78.0,Mahindra Scorpio N 2025,Mahindra,1819134.95,13.56,CNG,Manual,7,SUV,4.4,"Off-road,Family",4x4|Airbags|Touchscreen|Hill Descent,2198.0,5.0,2025,mahindra_scorpion.jpg,Top
+48.0,Tata Altroz 2025,Tata,905436.39,24.32,CNG,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Harman Audio|AC,1497.0,5.0,2025,tata_altroz.jpg,Base
+109.0,Maruti Suzuki Ertiga 2025,Maruti Suzuki,1115764.0,21.1,Petrol,Manual,7,SUV,4.4,"Family,Long Drive",ABS|Airbags|Touchscreen|Rear AC,1462.0,4.0,2025,maruti_ertiga.jpg,
+49.0,MG Hector 2025,MG,1662277.29,15.15,Petrol,Manual,5,SUV,4.8,"Family,Long Drive",Panoramic Sunroof|Airbags|Connected Car|ADAS,1451.0,5.0,2025,mg_hector.jpg,Top
+104.0,Kia Sonet 2025,Kia,1030422.0,18.4,Diesel,Automatic,5,SUV,4.7,"City,Long Drive",Ventilated Seats|Airbags|Touchscreen|Bose Audio,1493.0,5.0,2025,kia_sonet.jpg,
+99.0,Hyundai Verna 2025,Hyundai,1544905.97,19.14,Petrol,Manual,5,Sedan,4.8,"City,Long Drive",ADAS|Sunroof|Airbags|Bose Audio,1497.0,5.0,2025,hyundai_verna.jpg,Base
+62.0,Mahindra XUV700 2025,Mahindra,1972383.39,16.79,Petrol,Automatic,7,SUV,4.8,"Family,Long Drive",ADAS|Panoramic Sunroof|Airbags|Cruise Control,2198.0,5.0,2025,mahindra_xuv700.jpg,Mid
+74.0,Tata Harrier 2025,Tata,1705784.75,15.66,Petrol,Automatic,5,SUV,4.7,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2025,tata_harrier.jpg,Mid
+102.0,Tata Tiago EV 2025,Tata,1042430.8,323.53,Petrol,Automatic,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,tata_tiago.jpg,Top
+54.0,Maruti Suzuki Dzire 2025,Maruti Suzuki,733353.0,22.6,Petrol,Manual,5,Sedan,4.4,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2025,maruti_dzire.jpg,
+40.0,Hyundai Venue 2025,Hyundai,1001626.37,19.14,CNG,Manual,5,SUV,4.6,"City,Family",Sunroof|Cruise Control|Airbags|Connected Car,998.0,4.0,2025,hyundai_venue.jpg,Mid
+53.0,MG ZS EV 2024,MG,2084575.93,422.66,CNG,Automatic,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,mg_zs.jpg,Base
+76.0,Maruti Suzuki Baleno 2024,Maruti Suzuki,883966.6,21.07,Petrol,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2024,maruti_baleno.jpg,Top
+103.0,Honda Amaze 2024,Honda,871110.45,20.23,Diesel,Automatic,5,Sedan,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1199.0,4.0,2024,honda_amaze.jpg,Mid
+90.0,Volkswagen Virtus 2024,Volkswagen,1477544.53,20.87,Petrol,Automatic,5,Sedan,4.8,"City,Long Drive",Digital Cockpit|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,volkswagen_virtus.jpg,Mid
+105.0,Skoda Slavia 2024,Skoda,1027428.88,19.06,CNG,Automatic,5,Sedan,4.8,"City,Long Drive",Sunroof|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,skoda_slavia.jpg,Mid
+61.0,Kia Seltos 2024,Kia,1184467.0,17.69,CNG,Manual,5,SUV,4.6,"Family,Long Drive",Sunroof|Cruise Control|Airbags|ADAS,1497.0,5.0,2024,kia_seltos.jpg,Base
+20.0,Nissan Magnite,Nissan,599000.0,18.8,Petrol,Manual,5,SUV,4.3,"City,Family",360 Camera|Wireless Charger|JBL Audio|Air Purifier,999.0,4.0,2023,nissan_magnite.jpg,
+25.0,Honda Elevate,Honda,1308439.32,18.33,Diesel,Automatic,5,SUV,4.5,"Family,City",Lane Keep Assist|ADAS|Wireless Charging|Sunroof,1498.0,5.0,2023,honda_elevate.jpg,Base
+2.0,Hyundai Creta,Hyundai,1058541.46,17.82,Petrol,Manual,5,SUV,4.7,"Family,Long Drive",Sunroof|Cruise Control|Touchscreen|Climate Control,1493.0,5.0,2023,hyundai_creta.jpg,Mid
+22.0,Hyundai i20,Hyundai,877695.66,19.92,Diesel,Automatic,5,Hatchback,4.4,"City,Family",BlueLink|Sunroof|Wireless Charging|Digital Cluster,998.0,4.0,2023,hyundai_i20.jpg,Top
+7.0,Toyota Fortuner,Toyota,3024397.03,15.25,Petrol,Automatic,7,SUV,4.9,"Family,Long Drive,Off-road",4WD|Leather Seats|Premium Audio|Adaptive Cruise,2755.0,5.0,2023,toyota_fortuner.jpg,Base
+15.0,Toyota Glanza,Toyota,621492.78,23.45,Petrol,Automatic,5,Hatchback,4.3,"City,Family",Heads-up Display|Ambient Lighting|Smart Infotainment,1197.0,4.0,2023,toyota_glanza.jpg,Mid
+4.0,Honda City,Honda,1199000.0,18.4,Petrol,Automatic,5,Sedan,4.4,"City,Long Drive",Lane Watch|Cruise Control|Sunroof|Alexa Integration,1498.0,4.0,2023,honda_city.jpg,
+19.0,Renault Kiger,Renault,599000.0,19.2,Petrol,Manual,5,SUV,4.2,"City,Family",Wireless Android Auto|LED DRLs|8-inch Touchscreen,999.0,4.0,2023,renault_kiger.jpg,
+18.0,Skoda Kushaq,Skoda,1099000.0,17.8,Petrol,Manual,5,SUV,4.5,"Family,Long Drive",Ventilated Seats|Virtual Cockpit|Sunroof|6 Airbags,1498.0,5.0,2023,skoda_kushaq.jpg,
+12.0,Maruti Baleno,Maruti Suzuki,649000.0,22.9,Petrol,Automatic,5,Hatchback,4.4,"City,Family",Smartplay Studio|Head-up Display|Premium Interior,1197.0,4.0,2023,maruti_baleno.jpg,
+21.0,Jeep Compass,Jeep,2222851.61,13.35,Diesel,Manual,5,SUV,4.7,"Off-road,Long Drive",4x4|Panoramic Sunroof|Uconnect|Dual-zone Climate,1956.0,5.0,2023,jeep_compass.jpg,Top
+10.0,Tata Punch,Tata,599000.0,18.8,Petrol,Manual,5,SUV,4.4,"City,Family",Ground Clearance|Spacious|Safety Features|Digital Cluster,1199.0,5.0,2023,tata_punch.jpg,
+8.0,Maruti Altok10,Maruti Suzuki,349000.0,22.5,Petrol,Manual,5,Hatchback,4.2,City,Compact Design|Fuel Efficient|Easy Parking,796.0,3.0,2023,maruti_altok10.jpg,
+27.0,Toyota Innova Crysta,Toyota,1736465.79,16.69,CNG,Automatic,7,MUV,4.8,"Family,Long Drive",Premium Interior|Captain Seats|Spacious|Reliable,2393.0,5.0,2023,toyota_innova.jpg,Mid
+28.0,Maruti Brezza,Maruti Suzuki,922482.33,20.35,Diesel,Automatic,5,SUV,4.5,"City,Family",Head-up Display|360 Camera|Sunroof|Connected Car,1462.0,4.0,2023,maruti_brezza.jpg,Top
+3.0,Tata Nexon EV,Tata,1432224.16,272.14,Diesel,Automatic,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,tata_nexonev.jpg,Top
+72.0,Tata Safari 2023,Tata,1986318.09,15.95,CNG,Automatic,7,SUV,4.4,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2023,tata_safari.jpg,Base
+5.0,Mahindra Thar,Mahindra,1591225.21,15.95,CNG,Manual,4,SUV,4.8,"Off-road,Long Drive",4x4|Convertible Top|Off-road Tyres|Hill Assist,2184.0,4.0,2023,mahindra_thar.jpg,Top
+30.0,Kia Carens,Kia,1032749.47,17.71,CNG,Manual,7,MUV,4.6,"Family,Long Drive",6/7 Seater|Ventilated Seats|UVO Connect|Sunroof,1497.0,5.0,2023,kia_carens.jpg,Mid
+1.0,Maruti Suzuki Swift,Maruti Suzuki,700214.59,24.2,Petrol,Manual,5,Hatchback,4.5,"City,Family",ABS|Airbags|Power Steering|AC,1197.0,4.0,2023,maruti_swift.jpg,Mid
+26.0,Maruti Ertiga,Maruti Suzuki,849000.0,20.3,Petrol,Manual,7,MUV,4.4,"Family,Long Drive",7 Seater|Spacious|Fuel Efficient|Touchscreen,1462.0,4.0,2023,maruti_ertiga.jpg,
+,Hyundai i10 Nios 2023,Hyundai,13.73,12.3,CNG,Manual,6,Pickup,,,,,,2023,,
+,Hyundai i10 Nios 2024,Hyundai,28.97,20.2,CNG,Automatic,5,SUV,,,,,,2024,,
+,Hyundai i10 Nios 2025,Hyundai,17.9,10.6,Diesel,Automatic,5,Hatchback,,,,,,2025,,
+,Hyundai i20 2023,Hyundai,16.35,23.9,CNG,Automatic,7,Sedan,,,,,,2023,,
+,Hyundai i20 2024,Hyundai,33.9,12.1,Diesel,Manual,6,MUV,,,,,,2024,,
+,Hyundai i20 2025,Hyundai,9.4,24.4,Diesel,Automatic,4,Pickup,,,,,,2025,,
+,Hyundai Aura 2023,Hyundai,15.58,17.4,CNG,Automatic,5,MUV,,,,,,2023,,
+,Hyundai Aura 2024,Hyundai,14.77,25.2,Petrol,Automatic,6,SUV,,,,,,2024,,
+,Hyundai Aura 2025,Hyundai,17.9,11.0,Diesel,Manual,7,SUV,,,,,,2025,,
+,Hyundai Verna 2023,Hyundai,29.04,26.2,Diesel,Automatic,6,SUV,,,,,,2023,,
+,Hyundai Verna 2024,Hyundai,48.13,11.9,Diesel,Manual,7,Sedan,,,,,,2024,,
+,Hyundai Creta 2023,Hyundai,26.79,18.4,Diesel,Manual,4,Sedan,,,,,,2023,,
+,Hyundai Creta 2024,Hyundai,25.58,27.9,Diesel,Automatic,4,Pickup,,,,,,2024,,
+,Hyundai Creta 2025,Hyundai,39.28,21.9,Diesel,Automatic,6,MUV,,,,,,2025,,
+,Hyundai Alcazar 2023,Hyundai,15.4,28.6,CNG,Manual,6,Hatchback,,,,,,2023,,
+,Hyundai Alcazar 2024,Hyundai,31.35,14.4,Petrol,Automatic,7,Pickup,,,,,,2024,,
+,Hyundai Alcazar 2025,Hyundai,16.7,11.5,CNG,Automatic,4,MUV,,,,,,2025,,
+,Hyundai Venue 2023,Hyundai,25.76,19.5,Diesel,Automatic,5,Hatchback,,,,,,2023,,
+,Hyundai Venue 2024,Hyundai,38.83,22.9,Petrol,Manual,5,MUV,,,,,,2024,,
+,Hyundai Exter 2023,Hyundai,5.61,28.6,Diesel,Manual,4,SUV,,,,,,2023,,
+,Hyundai Exter 2024,Hyundai,21.24,19.6,Petrol,Manual,6,Sedan,,,,,,2024,,
+,Hyundai Exter 2025,Hyundai,22.14,10.4,Petrol,Automatic,5,SUV,,,,,,2025,,
+,Hyundai Tucson 2023,Hyundai,26.09,18.3,Petrol,Manual,5,SUV,,,,,,2023,,
+,Hyundai Tucson 2024,Hyundai,31.64,24.7,Diesel,Automatic,4,MUV,,,,,,2024,,
+,Hyundai Tucson 2025,Hyundai,49.87,11.9,Petrol,Automatic,6,Sedan,,,,,,2025,,
+,Honda Amaze 2023,Honda,17.61,27.3,Diesel,Automatic,7,SUV,,,,,,2023,,
+,Honda Amaze 2025,Honda,42.52,29.1,Petrol,Manual,7,MUV,,,,,,2025,,
+,Honda City 2023,Honda,33.12,19.5,Petrol,Manual,4,MUV,,,,,,2023,,
+,Honda City 2024,Honda,27.64,23.0,Diesel,Automatic,5,MUV,,,,,,2024,,
+,Honda City 2025,Honda,34.83,29.1,Petrol,Manual,7,Sedan,,,,,,2025,,
+,Honda Elevate 2023,Honda,14.57,27.1,Diesel,Manual,4,Hatchback,,,,,,2023,,
+,Honda Elevate 2024,Honda,37.5,19.7,CNG,Automatic,6,Pickup,,,,,,2024,,
+,Honda Elevate 2025,Honda,23.77,17.0,Petrol,Automatic,4,SUV,,,,,,2025,,
+,Honda WR-V 2023,Honda,10.17,21.3,Petrol,Automatic,6,SUV,,,,,,2023,,
+,Honda WR-V 2024,Honda,26.75,11.5,CNG,Manual,5,Hatchback,,,,,,2024,,
+,Honda WR-V 2025,Honda,32.59,26.7,Petrol,Automatic,4,SUV,,,,,,2025,,
+,Mahindra Bolero 2023,Mahindra,10.07,11.8,CNG,Manual,7,Pickup,,,,,,2023,,
+,Mahindra Bolero 2024,Mahindra,16.31,17.2,CNG,Automatic,7,Sedan,,,,,,2024,,
+,Mahindra Bolero 2025,Mahindra,29.54,19.5,CNG,Manual,7,Pickup,,,,,,2025,,
+,Mahindra Scorpio N 2023,Mahindra,22.98,25.6,Petrol,Automatic,7,SUV,,,,,,2023,,
+,Mahindra Scorpio N 2024,Mahindra,35.23,15.6,CNG,Automatic,5,SUV,,,,,,2024,,
+,Mahindra XUV300 2023,Mahindra,44.39,16.4,CNG,Automatic,5,SUV,,,,,,2023,,
+,Mahindra XUV300 2024,Mahindra,45.23,17.9,CNG,Automatic,7,MUV,,,,,,2024,,
+,Mahindra XUV300 2025,Mahindra,21.31,12.0,CNG,Automatic,4,MUV,,,,,,2025,,
+,Mahindra XUV700 2023,Mahindra,34.83,23.0,Petrol,Automatic,5,Sedan,,,,,,2023,,
+,Mahindra XUV700 2024,Mahindra,31.17,30.0,Petrol,Automatic,4,Sedan,,,,,,2024,,
+,Mahindra Thar 2023,Mahindra,40.78,29.2,CNG,Automatic,6,Hatchback,,,,,,2023,,
+,Mahindra Thar 2024,Mahindra,28.52,24.7,Diesel,Automatic,4,Pickup,,,,,,2024,,
+,Mahindra Thar 2025,Mahindra,34.27,10.4,CNG,Manual,5,MUV,,,,,,2025,,
+,Mahindra Marazzo 2023,Mahindra,23.79,24.3,CNG,Automatic,5,SUV,,,,,,2023,,
+,Mahindra Marazzo 2024,Mahindra,35.39,17.2,CNG,Automatic,6,Pickup,,,,,,2024,,
+,Mahindra Marazzo 2025,Mahindra,34.76,22.1,Diesel,Automatic,6,SUV,,,,,,2025,,
+,Toyota Glanza 2023,Toyota,25.4,19.8,Petrol,Manual,5,Hatchback,,,,,,2023,,
+,Toyota Glanza 2024,Toyota,41.64,27.6,Petrol,Automatic,5,Pickup,,,,,,2024,,
+,Toyota Glanza 2025,Toyota,13.58,25.8,CNG,Automatic,7,MUV,,,,,,2025,,
+,Toyota Urban Cruiser 2023,Toyota,8.27,28.4,Diesel,Automatic,6,Hatchback,,,,,,2023,,
+,Toyota Urban Cruiser 2024,Toyota,21.72,20.7,Petrol,Manual,6,MUV,,,,,,2024,,
+,Toyota Urban Cruiser 2025,Toyota,25.03,20.2,Diesel,Automatic,5,SUV,,,,,,2025,,
+,Toyota Innova Crysta 2023,Toyota,40.76,14.7,CNG,Manual,5,MUV,,,,,,2023,,
+,Toyota Innova Crysta 2024,Toyota,34.59,29.8,CNG,Automatic,6,MUV,,,,,,2024,,
+,Toyota Innova Crysta 2025,Toyota,27.69,22.2,Diesel,Manual,7,SUV,,,,,,2025,,
+,Toyota Innova Hycross 2023,Toyota,15.22,29.8,CNG,Manual,4,Sedan,,,,,,2023,,
+,Toyota Innova Hycross 2024,Toyota,36.48,15.8,Diesel,Automatic,4,Pickup,,,,,,2024,,
+,Toyota Innova Hycross 2025,Toyota,26.84,13.6,Petrol,Automatic,4,Hatchback,,,,,,2025,,
+,Toyota Fortuner 2023,Toyota,44.9,13.4,Diesel,Automatic,6,Sedan,,,,,,2023,,
+,Toyota Fortuner 2024,Toyota,10.66,29.5,Diesel,Manual,4,Sedan,,,,,,2024,,
+,Toyota Fortuner 2025,Toyota,26.99,10.5,Diesel,Automatic,5,Hatchback,,,,,,2025,,
+,Toyota Hilux 2023,Toyota,43.45,15.5,Diesel,Automatic,5,Hatchback,,,,,,2023,,
+,Toyota Hilux 2024,Toyota,22.36,21.5,CNG,Manual,6,MUV,,,,,,2024,,
+,Toyota Hilux 2025,Toyota,32.71,13.7,Diesel,Automatic,6,Hatchback,,,,,,2025,,
+,Tata Tiago 2023,Tata,32.53,11.1,Petrol,Manual,5,Sedan,,,,,,2023,,
+,Tata Tiago 2024,Tata,13.51,26.5,Diesel,Automatic,4,Sedan,,,,,,2024,,
+,Tata Tiago 2025,Tata,22.39,12.8,Diesel,Manual,6,Pickup,,,,,,2025,,
+,Tata Tigor 2023,Tata,39.92,27.8,Petrol,Automatic,7,SUV,,,,,,2023,,
+,Tata Tigor 2024,Tata,36.51,29.5,Petrol,Manual,6,MUV,,,,,,2024,,
+,Tata Tigor 2025,Tata,24.32,18.3,CNG,Automatic,5,Hatchback,,,,,,2025,,
+,Tata Altroz 2023,Tata,17.61,22.9,Petrol,Automatic,4,MUV,,,,,,2023,,
+,Tata Altroz 2024,Tata,16.07,23.6,Petrol,Automatic,5,Hatchback,,,,,,2024,,
+,Tata Nexon 2023,Tata,27.04,15.1,Petrol,Automatic,5,Pickup,,,,,,2023,,
+,Tata Nexon 2024,Tata,18.59,17.8,CNG,Manual,4,Sedan,,,,,,2024,,
+,Tata Nexon 2025,Tata,24.28,16.7,CNG,Manual,5,SUV,,,,,,2025,,
+,Tata Harrier 2023,Tata,17.86,14.3,Diesel,Manual,7,SUV,,,,,,2023,,
+,Tata Harrier 2024,Tata,46.37,10.1,Diesel,Automatic,7,Hatchback,,,,,,2024,,
+,Tata Safari 2024,Tata,13.84,12.2,Diesel,Automatic,5,Pickup,,,,,,2024,,
+,Tata Safari 2025,Tata,44.0,21.8,Petrol,Automatic,5,Sedan,,,,,,2025,,
+,Tata Punch 2023,Tata,35.05,12.4,Petrol,Automatic,4,SUV,,,,,,2023,,
+,Tata Punch 2024,Tata,37.54,20.2,Diesel,Automatic,6,Hatchback,,,,,,2024,,
+,Tata Punch 2025,Tata,5.14,22.8,Diesel,Automatic,5,Hatchback,,,,,,2025,,
+78.0,Mahindra Scorpio N 2025,Mahindra,1884050.16,13.2,Diesel,Manual,7,SUV,4.4,"Off-road,Family",4x4|Airbags|Touchscreen|Hill Descent,2198.0,5.0,2025,mahindra_scorpion.jpg,Base
+48.0,Tata Altroz 2025,Tata,1005733.64,22.4,Diesel,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Harman Audio|AC,1497.0,5.0,2025,tata_altroz.jpg,Mid
+109.0,Maruti Suzuki Ertiga 2025,Maruti Suzuki,1024067.64,21.2,Petrol,Automatic,7,SUV,4.4,"Family,Long Drive",ABS|Airbags|Touchscreen|Rear AC,1462.0,4.0,2025,maruti_ertiga.jpg,Base
+49.0,MG Hector 2025,MG,1775415.96,15.4,Petrol,Manual,5,SUV,4.8,"Family,Long Drive",Panoramic Sunroof|Airbags|Connected Car|ADAS,1451.0,5.0,2025,mg_hector.jpg,Top
+104.0,Kia Sonet 2025,Kia,933965.95,17.6,Petrol,Manual,5,SUV,4.7,"City,Long Drive",Ventilated Seats|Airbags|Touchscreen|Bose Audio,1493.0,5.0,2025,kia_sonet.jpg,Mid
+99.0,Hyundai Verna 2025,Hyundai,1679294.53,20.7,Petrol,Manual,5,Sedan,4.8,"City,Long Drive",ADAS|Sunroof|Airbags|Bose Audio,1497.0,5.0,2025,hyundai_verna.jpg,Top
+62.0,Mahindra XUV700 2025,Mahindra,2247128.8,18.1,Petrol,Manual,7,SUV,4.8,"Family,Long Drive",ADAS|Panoramic Sunroof|Airbags|Cruise Control,2198.0,5.0,2025,mahindra_xuv700.jpg,Mid
+74.0,Tata Harrier 2025,Tata,1588537.07,15.9,CNG,Manual,5,SUV,4.7,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2025,tata_harrier.jpg,Mid
+102.0,Tata Tiago EV 2025,Tata,1024209.04,338.7,Petrol,Automatic,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,tata_tiago.jpg,Top
+54.0,Maruti Suzuki Dzire 2025,Maruti Suzuki,694138.28,24.4,Petrol,Automatic,5,Sedan,4.4,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2025,maruti_dzire.jpg,Mid
+40.0,Hyundai Venue 2025,Hyundai,1083035.96,18.4,Petrol,Automatic,5,SUV,4.6,"City,Family",Sunroof|Cruise Control|Airbags|Connected Car,998.0,4.0,2025,hyundai_venue.jpg,Mid
+53.0,MG ZS EV 2024,MG,2036308.55,416.9,CNG,Manual,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,mg_zs.jpg,Base
+76.0,Maruti Suzuki Baleno 2024,Maruti Suzuki,976957.13,20.9,CNG,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2024,maruti_baleno.jpg,Mid
+103.0,Honda Amaze 2024,Honda,801388.79,18.4,CNG,Automatic,5,Sedan,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1199.0,4.0,2024,honda_amaze.jpg,Top
+90.0,Volkswagen Virtus 2024,Volkswagen,1365945.76,22.0,Diesel,Manual,5,Sedan,4.8,"City,Long Drive",Digital Cockpit|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,volkswagen_virtus.jpg,Top
+105.0,Skoda Slavia 2024,Skoda,1026048.79,18.1,Diesel,Automatic,5,Sedan,4.8,"City,Long Drive",Sunroof|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,skoda_slavia.jpg,Mid
+61.0,Kia Seltos 2024,Kia,1183050.51,17.1,Diesel,Automatic,5,SUV,4.6,"Family,Long Drive",Sunroof|Cruise Control|Airbags|ADAS,1497.0,5.0,2024,kia_seltos.jpg,Base
+20.0,Nissan Magnite,Nissan,547678.28,20.3,Diesel,Automatic,5,SUV,4.3,"City,Family",360 Camera|Wireless Charger|JBL Audio|Air Purifier,999.0,4.0,2023,nissan_magnite.jpg,Top
+25.0,Honda Elevate,Honda,1331069.24,18.4,Diesel,Manual,5,SUV,4.5,"Family,City",Lane Keep Assist|ADAS|Wireless Charging|Sunroof,1498.0,5.0,2023,honda_elevate.jpg,Top
+2.0,Hyundai Creta,Hyundai,1037404.8,18.6,Diesel,Automatic,5,SUV,4.7,"Family,Long Drive",Sunroof|Cruise Control|Touchscreen|Climate Control,1493.0,5.0,2023,hyundai_creta.jpg,Mid
+22.0,Hyundai i20,Hyundai,817098.61,20.1,Diesel,Manual,5,Hatchback,4.4,"City,Family",BlueLink|Sunroof|Wireless Charging|Digital Cluster,998.0,4.0,2023,hyundai_i20.jpg,Base
+7.0,Toyota Fortuner,Toyota,3016009.62,16.1,Petrol,Automatic,7,SUV,4.9,"Family,Long Drive,Off-road",4WD|Leather Seats|Premium Audio|Adaptive Cruise,2755.0,5.0,2023,toyota_fortuner.jpg,Mid
+15.0,Toyota Glanza,Toyota,593980.07,22.5,Diesel,Manual,5,Hatchback,4.3,"City,Family",Heads-up Display|Ambient Lighting|Smart Infotainment,1197.0,4.0,2023,toyota_glanza.jpg,Top
+4.0,Honda City,Honda,1366240.65,18.0,Petrol,Manual,5,Sedan,4.4,"City,Long Drive",Lane Watch|Cruise Control|Sunroof|Alexa Integration,1498.0,4.0,2023,honda_city.jpg,Top
+19.0,Renault Kiger,Renault,572389.96,18.8,CNG,Manual,5,SUV,4.2,"City,Family",Wireless Android Auto|LED DRLs|8-inch Touchscreen,999.0,4.0,2023,renault_kiger.jpg,Mid
+18.0,Skoda Kushaq,Skoda,1148062.5,18.6,Diesel,Automatic,5,SUV,4.5,"Family,Long Drive",Ventilated Seats|Virtual Cockpit|Sunroof|6 Airbags,1498.0,5.0,2023,skoda_kushaq.jpg,Base
+12.0,Maruti Baleno,Maruti Suzuki,699034.55,21.2,CNG,Manual,5,Hatchback,4.4,"City,Family",Smartplay Studio|Head-up Display|Premium Interior,1197.0,4.0,2023,maruti_baleno.jpg,Top
+21.0,Jeep Compass,Jeep,2355325.0,13.5,Diesel,Manual,5,SUV,4.7,"Off-road,Long Drive",4x4|Panoramic Sunroof|Uconnect|Dual-zone Climate,1956.0,5.0,2023,jeep_compass.jpg,Top
+10.0,Tata Punch,Tata,683341.23,19.6,Diesel,Automatic,5,SUV,4.4,"City,Family",Ground Clearance|Spacious|Safety Features|Digital Cluster,1199.0,5.0,2023,tata_punch.jpg,Top
+8.0,Maruti Altok10,Maruti Suzuki,320617.98,24.7,Petrol,Manual,5,Hatchback,4.2,City,Compact Design|Fuel Efficient|Easy Parking,796.0,3.0,2023,maruti_altok10.jpg,Mid
+27.0,Toyota Innova Crysta,Toyota,1651159.84,15.2,CNG,Automatic,7,MUV,4.8,"Family,Long Drive",Premium Interior|Captain Seats|Spacious|Reliable,2393.0,5.0,2023,toyota_innova.jpg,Mid
+28.0,Maruti Brezza,Maruti Suzuki,940710.12,20.2,Petrol,Automatic,5,SUV,4.5,"City,Family",Head-up Display|360 Camera|Sunroof|Connected Car,1462.0,4.0,2023,maruti_brezza.jpg,Mid
+3.0,Tata Nexon EV,Tata,1437200.96,286.3,Petrol,Automatic,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,tata_nexonev.jpg,Base
+72.0,Tata Safari 2023,Tata,1838333.74,17.0,Petrol,Automatic,7,SUV,4.4,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2023,tata_safari.jpg,Base
+5.0,Mahindra Thar,Mahindra,1662257.15,15.7,Diesel,Manual,4,SUV,4.8,"Off-road,Long Drive",4x4|Convertible Top|Off-road Tyres|Hill Assist,2184.0,4.0,2023,mahindra_thar.jpg,Mid
+30.0,Kia Carens,Kia,1177038.64,19.3,CNG,Manual,7,MUV,4.6,"Family,Long Drive",6/7 Seater|Ventilated Seats|UVO Connect|Sunroof,1497.0,5.0,2023,kia_carens.jpg,Top
+1.0,Maruti Suzuki Swift,Maruti Suzuki,773533.73,22.6,CNG,Automatic,5,Hatchback,4.5,"City,Family",ABS|Airbags|Power Steering|AC,1197.0,4.0,2023,maruti_swift.jpg,Base
+26.0,Maruti Ertiga,Maruti Suzuki,791455.25,19.3,CNG,Automatic,7,MUV,4.4,"Family,Long Drive",7 Seater|Spacious|Fuel Efficient|Touchscreen,1462.0,4.0,2023,maruti_ertiga.jpg,Base
+,Hyundai i10 Nios 2023,Hyundai,14.31,12.3,CNG,Automatic,6,Pickup,,,,,,2023,,Mid
+,Hyundai i10 Nios 2024,Hyundai,30.68,20.6,Diesel,Manual,5,SUV,,,,,,2024,,Mid
+,Hyundai i10 Nios 2025,Hyundai,19.94,10.9,Petrol,Manual,5,Hatchback,,,,,,2025,,Base
+,Hyundai i20 2023,Hyundai,18.23,22.5,Diesel,Automatic,7,Sedan,,,,,,2023,,Mid
+,Hyundai i20 2024,Hyundai,38.61,10.9,CNG,Manual,6,MUV,,,,,,2024,,Top
+,Hyundai i20 2025,Hyundai,8.79,23.1,CNG,Manual,4,Pickup,,,,,,2025,,Base
+,Hyundai Aura 2023,Hyundai,14.88,16.9,Petrol,Automatic,5,MUV,,,,,,2023,,Mid
+,Hyundai Aura 2024,Hyundai,14.48,27.0,Diesel,Automatic,6,SUV,,,,,,2024,,Top
+,Hyundai Aura 2025,Hyundai,18.02,11.9,Diesel,Automatic,7,SUV,,,,,,2025,,Mid
+,Hyundai Verna 2023,Hyundai,32.29,26.8,CNG,Manual,6,SUV,,,,,,2023,,Top
+,Hyundai Verna 2024,Hyundai,52.11,11.7,CNG,Manual,7,Sedan,,,,,,2024,,Mid
+,Hyundai Creta 2023,Hyundai,24.96,17.8,Diesel,Automatic,4,Sedan,,,,,,2023,,Base
+,Hyundai Creta 2024,Hyundai,27.56,29.8,Petrol,Manual,4,Pickup,,,,,,2024,,Mid
+,Hyundai Creta 2025,Hyundai,37.54,20.6,Diesel,Manual,6,MUV,,,,,,2025,,Mid
+,Hyundai Alcazar 2023,Hyundai,16.75,26.3,Diesel,Manual,6,Hatchback,,,,,,2023,,Top
+,Hyundai Alcazar 2024,Hyundai,31.39,15.2,CNG,Automatic,7,Pickup,,,,,,2024,,Top
+,Hyundai Alcazar 2025,Hyundai,15.36,12.2,Petrol,Automatic,4,MUV,,,,,,2025,,Base
+,Hyundai Venue 2023,Hyundai,27.45,19.4,Petrol,Manual,5,Hatchback,,,,,,2023,,Base
+,Hyundai Venue 2024,Hyundai,40.79,22.1,Petrol,Automatic,5,MUV,,,,,,2024,,Mid
+,Hyundai Exter 2023,Hyundai,5.97,28.6,Diesel,Manual,4,SUV,,,,,,2023,,Base
+,Hyundai Exter 2024,Hyundai,19.76,17.9,Petrol,Manual,6,Sedan,,,,,,2024,,Mid
+,Hyundai Exter 2025,Hyundai,24.93,9.4,Diesel,Manual,5,SUV,,,,,,2025,,Top
+,Hyundai Tucson 2023,Hyundai,25.47,19.7,CNG,Automatic,5,SUV,,,,,,2023,,Base
+,Hyundai Tucson 2024,Hyundai,32.99,23.3,Petrol,Automatic,4,MUV,,,,,,2024,,Base
+,Hyundai Tucson 2025,Hyundai,54.39,12.3,Diesel,Automatic,6,Sedan,,,,,,2025,,Top
+,Honda Amaze 2023,Honda,18.21,25.1,Petrol,Manual,7,SUV,,,,,,2023,,Mid
+,Honda Amaze 2025,Honda,48.14,27.3,CNG,Manual,7,MUV,,,,,,2025,,Top
+,Honda City 2023,Honda,36.69,19.3,CNG,Manual,4,MUV,,,,,,2023,,Mid
+,Honda City 2024,Honda,26.45,20.8,CNG,Manual,5,MUV,,,,,,2024,,Top
+,Honda City 2025,Honda,36.73,28.4,Diesel,Manual,7,Sedan,,,,,,2025,,Mid
+,Honda Elevate 2023,Honda,14.23,28.3,Diesel,Manual,4,Hatchback,,,,,,2023,,Base
+,Honda Elevate 2024,Honda,41.77,18.9,CNG,Automatic,6,Pickup,,,,,,2024,,Mid
+,Honda Elevate 2025,Honda,22.94,18.1,Petrol,Manual,4,SUV,,,,,,2025,,Base
+,Honda WR-V 2023,Honda,11.5,22.3,Diesel,Manual,6,SUV,,,,,,2023,,Mid
+,Honda WR-V 2024,Honda,27.5,11.8,CNG,Automatic,5,Hatchback,,,,,,2024,,Mid
+,Honda WR-V 2025,Honda,36.56,25.1,CNG,Automatic,4,SUV,,,,,,2025,,Top
+,Mahindra Bolero 2023,Mahindra,9.42,12.0,Diesel,Automatic,7,Pickup,,,,,,2023,,Mid
+,Mahindra Bolero 2024,Mahindra,18.42,17.1,CNG,Manual,7,Sedan,,,,,,2024,,Top
+,Mahindra Bolero 2025,Mahindra,28.61,20.0,Petrol,Automatic,7,Pickup,,,,,,2025,,Base
+,Mahindra Scorpio N 2023,Mahindra,25.46,26.5,Diesel,Automatic,7,SUV,,,,,,2023,,Base
+,Mahindra Scorpio N 2024,Mahindra,38.18,14.7,Petrol,Manual,5,SUV,,,,,,2024,,Base
+,Mahindra XUV300 2023,Mahindra,43.33,17.7,CNG,Automatic,5,SUV,,,,,,2023,,Mid
+,Mahindra XUV300 2024,Mahindra,47.93,17.4,Petrol,Manual,7,MUV,,,,,,2024,,Base
+,Mahindra XUV300 2025,Mahindra,20.59,12.1,Diesel,Automatic,4,MUV,,,,,,2025,,Mid
+,Mahindra XUV700 2023,Mahindra,37.13,20.8,CNG,Manual,5,Sedan,,,,,,2023,,Mid
+,Mahindra XUV700 2024,Mahindra,31.13,32.9,Petrol,Automatic,4,Sedan,,,,,,2024,,Mid
+,Mahindra Thar 2023,Mahindra,44.77,29.6,CNG,Manual,6,Hatchback,,,,,,2023,,Top
+,Mahindra Thar 2024,Mahindra,29.57,25.9,Diesel,Automatic,4,Pickup,,,,,,2024,,Top
+,Mahindra Thar 2025,Mahindra,33.31,9.6,Diesel,Automatic,5,MUV,,,,,,2025,,Base
+,Mahindra Marazzo 2023,Mahindra,24.86,25.7,Diesel,Automatic,5,SUV,,,,,,2023,,Base
+,Mahindra Marazzo 2024,Mahindra,32.26,16.9,CNG,Automatic,6,Pickup,,,,,,2024,,Base
+,Mahindra Marazzo 2025,Mahindra,39.79,22.1,Petrol,Manual,6,SUV,,,,,,2025,,Mid
+,Toyota Glanza 2023,Toyota,28.94,21.6,Diesel,Manual,5,Hatchback,,,,,,2023,,Top
+,Toyota Glanza 2024,Toyota,46.64,29.9,Petrol,Automatic,5,Pickup,,,,,,2024,,Base
+,Toyota Glanza 2025,Toyota,14.35,25.9,Diesel,Automatic,7,MUV,,,,,,2025,,Base
+,Toyota Urban Cruiser 2023,Toyota,8.48,31.1,Petrol,Manual,6,Hatchback,,,,,,2023,,Top
+,Toyota Urban Cruiser 2024,Toyota,21.73,19.6,Diesel,Automatic,6,MUV,,,,,,2024,,Base
+,Toyota Urban Cruiser 2025,Toyota,26.97,18.9,Diesel,Automatic,5,SUV,,,,,,2025,,Base
+,Toyota Innova Crysta 2023,Toyota,38.28,15.3,Diesel,Manual,5,MUV,,,,,,2023,,Mid
+,Toyota Innova Crysta 2024,Toyota,37.62,27.6,CNG,Automatic,6,MUV,,,,,,2024,,Base
+,Toyota Innova Crysta 2025,Toyota,30.82,22.9,Petrol,Manual,7,SUV,,,,,,2025,,Top
+,Toyota Innova Hycross 2023,Toyota,17.17,29.9,Diesel,Manual,4,Sedan,,,,,,2023,,Top
+,Toyota Innova Hycross 2024,Toyota,34.2,16.2,Petrol,Manual,4,Pickup,,,,,,2024,,Top
+,Toyota Innova Hycross 2025,Toyota,25.41,14.1,Petrol,Automatic,4,Hatchback,,,,,,2025,,Mid
+,Toyota Fortuner 2023,Toyota,43.6,14.7,CNG,Manual,6,Sedan,,,,,,2023,,Top
+,Toyota Fortuner 2024,Toyota,10.54,27.1,Petrol,Manual,4,Sedan,,,,,,2024,,Top
+,Toyota Fortuner 2025,Toyota,27.5,10.8,Diesel,Automatic,5,Hatchback,,,,,,2025,,Base
+,Toyota Hilux 2023,Toyota,43.73,15.1,Petrol,Automatic,5,Hatchback,,,,,,2023,,Base
+,Toyota Hilux 2024,Toyota,21.12,22.8,Petrol,Manual,6,MUV,,,,,,2024,,Mid
+,Toyota Hilux 2025,Toyota,35.79,14.2,CNG,Automatic,6,Hatchback,,,,,,2025,,Mid
+,Tata Tiago 2023,Tata,35.21,10.1,CNG,Manual,5,Sedan,,,,,,2023,,Mid
+,Tata Tiago 2024,Tata,14.8,26.7,CNG,Automatic,4,Sedan,,,,,,2024,,Mid
+,Tata Tiago 2025,Tata,22.78,11.5,Petrol,Manual,6,Pickup,,,,,,2025,,Top
+,Tata Tigor 2023,Tata,38.6,27.3,Petrol,Automatic,7,SUV,,,,,,2023,,Base
+,Tata Tigor 2024,Tata,37.78,29.1,Diesel,Manual,6,MUV,,,,,,2024,,Top
+,Tata Tigor 2025,Tata,26.17,19.6,CNG,Manual,5,Hatchback,,,,,,2025,,Mid
+,Tata Altroz 2023,Tata,16.51,23.5,CNG,Automatic,4,MUV,,,,,,2023,,Mid
+,Tata Altroz 2024,Tata,17.42,24.8,Diesel,Manual,5,Hatchback,,,,,,2024,,Mid
+,Tata Nexon 2023,Tata,27.99,15.7,CNG,Automatic,5,Pickup,,,,,,2023,,Top
+,Tata Nexon 2024,Tata,19.36,19.1,Diesel,Manual,4,Sedan,,,,,,2024,,Top
+,Tata Nexon 2025,Tata,22.57,15.3,CNG,Manual,5,SUV,,,,,,2025,,Base
+,Tata Harrier 2023,Tata,17.49,14.0,Petrol,Manual,7,SUV,,,,,,2023,,Mid
+,Tata Harrier 2024,Tata,45.12,11.1,CNG,Automatic,7,Hatchback,,,,,,2024,,Top
+,Tata Safari 2024,Tata,14.58,13.0,Petrol,Automatic,5,Pickup,,,,,,2024,,Base
+,Tata Safari 2025,Tata,45.56,19.9,Petrol,Manual,5,Sedan,,,,,,2025,,Base
+,Tata Punch 2023,Tata,33.38,11.4,CNG,Manual,4,SUV,,,,,,2023,,Top
+,Tata Punch 2024,Tata,40.77,18.4,Diesel,Manual,6,Hatchback,,,,,,2024,,Top
+,Tata Punch 2025,Tata,5.32,22.3,CNG,Manual,5,Hatchback,,,,,,2025,,Top
+78.0,Mahindra Scorpio N 2025,Mahindra,2041754.46,13.3,CNG,Manual,7,SUV,4.4,"Off-road,Family",4x4|Airbags|Touchscreen|Hill Descent,2198.0,5.0,2025,mahindra_scorpion.jpg,Mid
+48.0,Tata Altroz 2025,Tata,918028.25,26.3,Petrol,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Harman Audio|AC,1497.0,5.0,2025,tata_altroz.jpg,Top
+109.0,Maruti Suzuki Ertiga 2025,Maruti Suzuki,1249026.87,20.5,Diesel,Automatic,7,SUV,4.4,"Family,Long Drive",ABS|Airbags|Touchscreen|Rear AC,1462.0,4.0,2025,maruti_ertiga.jpg,Top
+49.0,MG Hector 2025,MG,1602208.69,14.2,CNG,Automatic,5,SUV,4.8,"Family,Long Drive",Panoramic Sunroof|Airbags|Connected Car|ADAS,1451.0,5.0,2025,mg_hector.jpg,Base
+104.0,Kia Sonet 2025,Kia,1082143.36,19.5,Petrol,Manual,5,SUV,4.7,"City,Long Drive",Ventilated Seats|Airbags|Touchscreen|Bose Audio,1493.0,5.0,2025,kia_sonet.jpg,Top
+99.0,Hyundai Verna 2025,Hyundai,1648685.32,20.8,Petrol,Automatic,5,Sedan,4.8,"City,Long Drive",ADAS|Sunroof|Airbags|Bose Audio,1497.0,5.0,2025,hyundai_verna.jpg,Base
+62.0,Mahindra XUV700 2025,Mahindra,1986746.86,16.2,Diesel,Manual,7,SUV,4.8,"Family,Long Drive",ADAS|Panoramic Sunroof|Airbags|Cruise Control,2198.0,5.0,2025,mahindra_xuv700.jpg,Mid
+74.0,Tata Harrier 2025,Tata,1835119.63,14.1,Petrol,Automatic,5,SUV,4.7,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2025,tata_harrier.jpg,Top
+102.0,Tata Tiago EV 2025,Tata,1041385.52,317.2,Diesel,Manual,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,tata_tiago.jpg,Mid
+54.0,Maruti Suzuki Dzire 2025,Maruti Suzuki,833855.84,24.7,Petrol,Manual,5,Sedan,4.4,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2025,maruti_dzire.jpg,Mid
+40.0,Hyundai Venue 2025,Hyundai,1125482.03,19.5,Petrol,Automatic,5,SUV,4.6,"City,Family",Sunroof|Cruise Control|Airbags|Connected Car,998.0,4.0,2025,hyundai_venue.jpg,Top
+53.0,MG ZS EV 2024,MG,2367933.42,456.0,Diesel,Automatic,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,mg_zs.jpg,Mid
+76.0,Maruti Suzuki Baleno 2024,Maruti Suzuki,915911.12,19.5,CNG,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2024,maruti_baleno.jpg,Top
+103.0,Honda Amaze 2024,Honda,950478.75,19.9,CNG,Automatic,5,Sedan,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1199.0,4.0,2024,honda_amaze.jpg,Top
+90.0,Volkswagen Virtus 2024,Volkswagen,1676762.35,21.4,Petrol,Automatic,5,Sedan,4.8,"City,Long Drive",Digital Cockpit|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,volkswagen_virtus.jpg,Mid
+105.0,Skoda Slavia 2024,Skoda,1005597.4,21.0,Diesel,Manual,5,Sedan,4.8,"City,Long Drive",Sunroof|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,skoda_slavia.jpg,Base
+61.0,Kia Seltos 2024,Kia,1190752.22,17.9,Diesel,Manual,5,SUV,4.6,"Family,Long Drive",Sunroof|Cruise Control|Airbags|ADAS,1497.0,5.0,2024,kia_seltos.jpg,Top
+20.0,Nissan Magnite,Nissan,582765.09,20.4,Diesel,Manual,5,SUV,4.3,"City,Family",360 Camera|Wireless Charger|JBL Audio|Air Purifier,999.0,4.0,2023,nissan_magnite.jpg,Base
+25.0,Honda Elevate,Honda,1362926.05,18.5,Petrol,Automatic,5,SUV,4.5,"Family,City",Lane Keep Assist|ADAS|Wireless Charging|Sunroof,1498.0,5.0,2023,honda_elevate.jpg,Mid
+2.0,Hyundai Creta,Hyundai,1145606.94,16.2,Diesel,Manual,5,SUV,4.7,"Family,Long Drive",Sunroof|Cruise Control|Touchscreen|Climate Control,1493.0,5.0,2023,hyundai_creta.jpg,Base
+22.0,Hyundai i20,Hyundai,922349.03,18.9,CNG,Automatic,5,Hatchback,4.4,"City,Family",BlueLink|Sunroof|Wireless Charging|Digital Cluster,998.0,4.0,2023,hyundai_i20.jpg,Base
+7.0,Toyota Fortuner,Toyota,3303385.8,16.2,Diesel,Automatic,7,SUV,4.9,"Family,Long Drive,Off-road",4WD|Leather Seats|Premium Audio|Adaptive Cruise,2755.0,5.0,2023,toyota_fortuner.jpg,Top
+15.0,Toyota Glanza,Toyota,613476.51,23.9,CNG,Manual,5,Hatchback,4.3,"City,Family",Heads-up Display|Ambient Lighting|Smart Infotainment,1197.0,4.0,2023,toyota_glanza.jpg,Mid
+4.0,Honda City,Honda,1231275.56,19.8,CNG,Manual,5,Sedan,4.4,"City,Long Drive",Lane Watch|Cruise Control|Sunroof|Alexa Integration,1498.0,4.0,2023,honda_city.jpg,Top
+19.0,Renault Kiger,Renault,587815.6,17.5,Diesel,Manual,5,SUV,4.2,"City,Family",Wireless Android Auto|LED DRLs|8-inch Touchscreen,999.0,4.0,2023,renault_kiger.jpg,Mid
+18.0,Skoda Kushaq,Skoda,1059591.91,16.8,Diesel,Manual,5,SUV,4.5,"Family,Long Drive",Ventilated Seats|Virtual Cockpit|Sunroof|6 Airbags,1498.0,5.0,2023,skoda_kushaq.jpg,Base
+12.0,Maruti Baleno,Maruti Suzuki,713323.65,24.7,CNG,Automatic,5,Hatchback,4.4,"City,Family",Smartplay Studio|Head-up Display|Premium Interior,1197.0,4.0,2023,maruti_baleno.jpg,Top
+21.0,Jeep Compass,Jeep,2311640.84,12.5,Diesel,Manual,5,SUV,4.7,"Off-road,Long Drive",4x4|Panoramic Sunroof|Uconnect|Dual-zone Climate,1956.0,5.0,2023,jeep_compass.jpg,Top
+10.0,Tata Punch,Tata,568173.38,19.3,CNG,Automatic,5,SUV,4.4,"City,Family",Ground Clearance|Spacious|Safety Features|Digital Cluster,1199.0,5.0,2023,tata_punch.jpg,Top
+8.0,Maruti Altok10,Maruti Suzuki,342570.2,21.6,Diesel,Automatic,5,Hatchback,4.2,City,Compact Design|Fuel Efficient|Easy Parking,796.0,3.0,2023,maruti_altok10.jpg,Base
+27.0,Toyota Innova Crysta,Toyota,1826547.69,15.7,CNG,Manual,7,MUV,4.8,"Family,Long Drive",Premium Interior|Captain Seats|Spacious|Reliable,2393.0,5.0,2023,toyota_innova.jpg,Mid
+28.0,Maruti Brezza,Maruti Suzuki,946623.17,20.9,CNG,Automatic,5,SUV,4.5,"City,Family",Head-up Display|360 Camera|Sunroof|Connected Car,1462.0,4.0,2023,maruti_brezza.jpg,Mid
+3.0,Tata Nexon EV,Tata,1300243.52,278.7,Diesel,Manual,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,tata_nexonev.jpg,Base
+72.0,Tata Safari 2023,Tata,2082804.52,15.5,Diesel,Automatic,7,SUV,4.4,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2023,tata_safari.jpg,Base
+5.0,Mahindra Thar,Mahindra,1684333.81,15.5,Petrol,Manual,4,SUV,4.8,"Off-road,Long Drive",4x4|Convertible Top|Off-road Tyres|Hill Assist,2184.0,4.0,2023,mahindra_thar.jpg,Base
+30.0,Kia Carens,Kia,1170403.82,17.8,Diesel,Manual,7,MUV,4.6,"Family,Long Drive",6/7 Seater|Ventilated Seats|UVO Connect|Sunroof,1497.0,5.0,2023,kia_carens.jpg,Top
+1.0,Maruti Suzuki Swift,Maruti Suzuki,796944.61,26.5,Petrol,Manual,5,Hatchback,4.5,"City,Family",ABS|Airbags|Power Steering|AC,1197.0,4.0,2023,maruti_swift.jpg,Base
+26.0,Maruti Ertiga,Maruti Suzuki,909371.09,19.0,Diesel,Automatic,7,MUV,4.4,"Family,Long Drive",7 Seater|Spacious|Fuel Efficient|Touchscreen,1462.0,4.0,2023,maruti_ertiga.jpg,Base
+,Hyundai i10 Nios 2023,Hyundai,14.47,12.9,CNG,Manual,6,Pickup,,,,,,2023,,Mid
+,Hyundai i10 Nios 2024,Hyundai,26.88,18.4,Diesel,Manual,5,SUV,,,,,,2024,,Top
+,Hyundai i10 Nios 2025,Hyundai,18.85,9.7,Petrol,Manual,5,Hatchback,,,,,,2025,,Top
+,Hyundai i20 2023,Hyundai,15.43,24.9,CNG,Manual,7,Sedan,,,,,,2023,,Base
+,Hyundai i20 2024,Hyundai,34.7,12.5,CNG,Manual,6,MUV,,,,,,2024,,Mid
+,Hyundai i20 2025,Hyundai,9.27,23.9,Petrol,Manual,4,Pickup,,,,,,2025,,Base
+,Hyundai Aura 2023,Hyundai,14.88,17.7,Diesel,Automatic,5,MUV,,,,,,2023,,Base
+,Hyundai Aura 2024,Hyundai,14.08,27.4,CNG,Automatic,6,SUV,,,,,,2024,,Top
+,Hyundai Aura 2025,Hyundai,17.19,12.0,CNG,Manual,7,SUV,,,,,,2025,,Base
+,Hyundai Verna 2023,Hyundai,27.25,25.6,Diesel,Manual,6,SUV,,,,,,2023,,Mid
+,Hyundai Verna 2024,Hyundai,54.59,12.7,Petrol,Manual,7,Sedan,,,,,,2024,,Base
+,Hyundai Creta 2023,Hyundai,25.16,17.8,CNG,Automatic,4,Sedan,,,,,,2023,,Mid
+,Hyundai Creta 2024,Hyundai,23.08,28.3,Petrol,Manual,4,Pickup,,,,,,2024,,Top
+,Hyundai Creta 2025,Hyundai,37.98,21.2,CNG,Automatic,6,MUV,,,,,,2025,,Base
+,Hyundai Alcazar 2023,Hyundai,16.12,28.7,Petrol,Manual,6,Hatchback,,,,,,2023,,Mid
+,Hyundai Alcazar 2024,Hyundai,34.51,14.0,Diesel,Automatic,7,Pickup,,,,,,2024,,Mid
+,Hyundai Alcazar 2025,Hyundai,15.53,12.6,Petrol,Automatic,4,MUV,,,,,,2025,,Top
+,Hyundai Venue 2023,Hyundai,26.72,18.3,CNG,Manual,5,Hatchback,,,,,,2023,,Top
+,Hyundai Venue 2024,Hyundai,44.65,23.9,Diesel,Automatic,5,MUV,,,,,,2024,,Top
+,Hyundai Exter 2023,Hyundai,5.57,26.8,Diesel,Automatic,4,SUV,,,,,,2023,,Top
+,Hyundai Exter 2024,Hyundai,20.49,17.9,CNG,Manual,6,Sedan,,,,,,2024,,Top
+,Hyundai Exter 2025,Hyundai,22.19,9.9,CNG,Manual,5,SUV,,,,,,2025,,Top
+,Hyundai Tucson 2023,Hyundai,28.68,19.7,CNG,Manual,5,SUV,,,,,,2023,,Mid
+,Hyundai Tucson 2024,Hyundai,30.15,25.5,Diesel,Manual,4,MUV,,,,,,2024,,Top
+,Hyundai Tucson 2025,Hyundai,49.25,12.8,Petrol,Manual,6,Sedan,,,,,,2025,,Top
+,Honda Amaze 2023,Honda,20.03,28.7,CNG,Automatic,7,SUV,,,,,,2023,,Base
+,Honda Amaze 2025,Honda,46.73,29.4,CNG,Automatic,7,MUV,,,,,,2025,,Top
+,Honda City 2023,Honda,32.72,20.1,Petrol,Manual,4,MUV,,,,,,2023,,Base
+,Honda City 2024,Honda,24.96,24.9,Diesel,Manual,5,MUV,,,,,,2024,,Base
+,Honda City 2025,Honda,32.43,29.5,Diesel,Manual,7,Sedan,,,,,,2025,,Top
+,Honda Elevate 2023,Honda,15.91,29.3,Diesel,Manual,4,Hatchback,,,,,,2023,,Mid
+,Honda Elevate 2024,Honda,35.43,19.6,Petrol,Manual,6,Pickup,,,,,,2024,,Mid
+,Honda Elevate 2025,Honda,26.95,18.3,Diesel,Automatic,4,SUV,,,,,,2025,,Mid
+,Honda WR-V 2023,Honda,9.55,19.3,Diesel,Manual,6,SUV,,,,,,2023,,Mid
+,Honda WR-V 2024,Honda,27.51,11.9,CNG,Manual,5,Hatchback,,,,,,2024,,Mid
+,Honda WR-V 2025,Honda,30.58,25.5,CNG,Automatic,4,SUV,,,,,,2025,,Mid
+,Mahindra Bolero 2023,Mahindra,10.39,12.3,Petrol,Manual,7,Pickup,,,,,,2023,,Mid
+,Mahindra Bolero 2024,Mahindra,17.93,16.9,Petrol,Automatic,7,Sedan,,,,,,2024,,Mid
+,Mahindra Bolero 2025,Mahindra,29.15,19.9,Diesel,Automatic,7,Pickup,,,,,,2025,,Base
+,Mahindra Scorpio N 2023,Mahindra,21.27,26.2,Diesel,Manual,7,SUV,,,,,,2023,,Mid
+,Mahindra Scorpio N 2024,Mahindra,33.57,17.0,Petrol,Manual,5,SUV,,,,,,2024,,Base
+,Mahindra XUV300 2023,Mahindra,45.31,16.1,Diesel,Automatic,5,SUV,,,,,,2023,,Mid
+,Mahindra XUV300 2024,Mahindra,46.56,18.8,CNG,Manual,7,MUV,,,,,,2024,,Top
+,Mahindra XUV300 2025,Mahindra,23.36,11.4,Petrol,Manual,4,MUV,,,,,,2025,,Mid
+,Mahindra XUV700 2023,Mahindra,33.72,21.6,CNG,Automatic,5,Sedan,,,,,,2023,,Base
+,Mahindra XUV700 2024,Mahindra,28.33,32.5,Petrol,Automatic,4,Sedan,,,,,,2024,,Mid
+,Mahindra Thar 2023,Mahindra,45.03,30.4,Petrol,Manual,6,Hatchback,,,,,,2023,,Base
+,Mahindra Thar 2024,Mahindra,26.32,25.0,CNG,Manual,4,Pickup,,,,,,2024,,Base
+,Mahindra Thar 2025,Mahindra,39.0,10.5,Diesel,Manual,5,MUV,,,,,,2025,,Mid
+,Mahindra Marazzo 2023,Mahindra,21.43,23.5,Diesel,Automatic,5,SUV,,,,,,2023,,Mid
+,Mahindra Marazzo 2024,Mahindra,34.05,18.0,Diesel,Manual,6,Pickup,,,,,,2024,,Top
+,Mahindra Marazzo 2025,Mahindra,39.48,21.3,CNG,Automatic,6,SUV,,,,,,2025,,Mid
+,Toyota Glanza 2023,Toyota,26.98,20.9,Diesel,Automatic,5,Hatchback,,,,,,2023,,Top
+,Toyota Glanza 2024,Toyota,39.9,28.0,Petrol,Automatic,5,Pickup,,,,,,2024,,Top
+,Toyota Glanza 2025,Toyota,12.97,26.1,Diesel,Automatic,7,MUV,,,,,,2025,,Mid
+,Toyota Urban Cruiser 2023,Toyota,8.65,25.8,CNG,Manual,6,Hatchback,,,,,,2023,,Top
+,Toyota Urban Cruiser 2024,Toyota,23.26,19.4,Diesel,Manual,6,MUV,,,,,,2024,,Top
+,Toyota Urban Cruiser 2025,Toyota,27.56,20.6,CNG,Automatic,5,SUV,,,,,,2025,,Mid
+,Toyota Innova Crysta 2023,Toyota,38.8,15.1,CNG,Manual,5,MUV,,,,,,2023,,Base
+,Toyota Innova Crysta 2024,Toyota,36.93,31.2,Diesel,Automatic,6,MUV,,,,,,2024,,Top
+,Toyota Innova Crysta 2025,Toyota,31.21,23.9,Diesel,Manual,7,SUV,,,,,,2025,,Mid
+,Toyota Innova Hycross 2023,Toyota,14.0,30.2,Diesel,Manual,4,Sedan,,,,,,2023,,Mid
+,Toyota Innova Hycross 2024,Toyota,41.59,16.0,Petrol,Manual,4,Pickup,,,,,,2024,,Top
+,Toyota Innova Hycross 2025,Toyota,24.48,14.9,Petrol,Automatic,4,Hatchback,,,,,,2025,,Mid
+,Toyota Fortuner 2023,Toyota,51.42,13.0,Petrol,Automatic,6,Sedan,,,,,,2023,,Mid
+,Toyota Fortuner 2024,Toyota,11.25,29.8,Diesel,Automatic,4,Sedan,,,,,,2024,,Base
+,Toyota Fortuner 2025,Toyota,26.45,11.1,Petrol,Manual,5,Hatchback,,,,,,2025,,Base
+,Toyota Hilux 2023,Toyota,48.92,14.1,Petrol,Manual,5,Hatchback,,,,,,2023,,Mid
+,Toyota Hilux 2024,Toyota,20.99,19.5,Petrol,Manual,6,MUV,,,,,,2024,,Base
+,Toyota Hilux 2025,Toyota,33.45,13.4,CNG,Manual,6,Hatchback,,,,,,2025,,Mid
+,Tata Tiago 2023,Tata,33.37,10.8,Diesel,Automatic,5,Sedan,,,,,,2023,,Top
+,Tata Tiago 2024,Tata,15.53,25.5,CNG,Manual,4,Sedan,,,,,,2024,,Base
+,Tata Tiago 2025,Tata,21.73,13.4,CNG,Manual,6,Pickup,,,,,,2025,,Mid
+,Tata Tigor 2023,Tata,37.55,28.4,CNG,Automatic,7,SUV,,,,,,2023,,Top
+,Tata Tigor 2024,Tata,38.7,27.8,Diesel,Automatic,6,MUV,,,,,,2024,,Mid
+,Tata Tigor 2025,Tata,24.69,16.7,Petrol,Manual,5,Hatchback,,,,,,2025,,Base
+,Tata Altroz 2023,Tata,15.89,23.7,Petrol,Manual,4,MUV,,,,,,2023,,Base
+,Tata Altroz 2024,Tata,16.98,23.5,Diesel,Automatic,5,Hatchback,,,,,,2024,,Top
+,Tata Nexon 2023,Tata,26.91,14.7,Diesel,Manual,5,Pickup,,,,,,2023,,Top
+,Tata Nexon 2024,Tata,17.58,18.9,CNG,Manual,4,Sedan,,,,,,2024,,Mid
+,Tata Nexon 2025,Tata,27.28,15.5,Diesel,Automatic,5,SUV,,,,,,2025,,Mid
+,Tata Harrier 2023,Tata,20.29,15.4,CNG,Manual,7,SUV,,,,,,2023,,Mid
+,Tata Harrier 2024,Tata,42.18,10.7,Petrol,Manual,7,Hatchback,,,,,,2024,,Top
+,Tata Safari 2024,Tata,15.72,11.4,Petrol,Automatic,5,Pickup,,,,,,2024,,Top
+,Tata Safari 2025,Tata,40.99,23.9,Diesel,Automatic,5,Sedan,,,,,,2025,,Base
+,Tata Punch 2023,Tata,38.76,11.3,Diesel,Automatic,4,SUV,,,,,,2023,,Top
+,Tata Punch 2024,Tata,38.98,18.4,Diesel,Manual,6,Hatchback,,,,,,2024,,Base
+,Tata Punch 2025,Tata,5.44,20.7,Diesel,Manual,5,Hatchback,,,,,,2025,,Top
+78.0,Mahindra Scorpio N 2025,Mahindra,1810505.73,14.3,Diesel,Automatic,7,SUV,4.4,"Off-road,Family",4x4|Airbags|Touchscreen|Hill Descent,2198.0,5.0,2025,mahindra_scorpion.jpg,Mid
+48.0,Tata Altroz 2025,Tata,876942.17,25.4,CNG,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Harman Audio|AC,1497.0,5.0,2025,tata_altroz.jpg,Base
+109.0,Maruti Suzuki Ertiga 2025,Maruti Suzuki,1102091.55,22.2,Diesel,Automatic,7,SUV,4.4,"Family,Long Drive",ABS|Airbags|Touchscreen|Rear AC,1462.0,4.0,2025,maruti_ertiga.jpg,Mid
+49.0,MG Hector 2025,MG,1809560.59,14.6,Diesel,Manual,5,SUV,4.8,"Family,Long Drive",Panoramic Sunroof|Airbags|Connected Car|ADAS,1451.0,5.0,2025,mg_hector.jpg,Top
+104.0,Kia Sonet 2025,Kia,1161231.71,17.5,Petrol,Manual,5,SUV,4.7,"City,Long Drive",Ventilated Seats|Airbags|Touchscreen|Bose Audio,1493.0,5.0,2025,kia_sonet.jpg,Base
+99.0,Hyundai Verna 2025,Hyundai,1628116.65,18.4,CNG,Automatic,5,Sedan,4.8,"City,Long Drive",ADAS|Sunroof|Airbags|Bose Audio,1497.0,5.0,2025,hyundai_verna.jpg,Top
+62.0,Mahindra XUV700 2025,Mahindra,2177807.01,16.3,Diesel,Automatic,7,SUV,4.8,"Family,Long Drive",ADAS|Panoramic Sunroof|Airbags|Cruise Control,2198.0,5.0,2025,mahindra_xuv700.jpg,Mid
+74.0,Tata Harrier 2025,Tata,1635185.7,14.3,Petrol,Manual,5,SUV,4.7,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2025,tata_harrier.jpg,Top
+102.0,Tata Tiago EV 2025,Tata,951585.74,323.5,CNG,Automatic,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,tata_tiago.jpg,Top
+54.0,Maruti Suzuki Dzire 2025,Maruti Suzuki,793916.52,22.1,Petrol,Manual,5,Sedan,4.4,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2025,maruti_dzire.jpg,Top
+40.0,Hyundai Venue 2025,Hyundai,1014442.85,18.6,Diesel,Manual,5,SUV,4.6,"City,Family",Sunroof|Cruise Control|Airbags|Connected Car,998.0,4.0,2025,hyundai_venue.jpg,Mid
+53.0,MG ZS EV 2024,MG,2102944.25,385.3,Petrol,Manual,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,mg_zs.jpg,Base
+76.0,Maruti Suzuki Baleno 2024,Maruti Suzuki,989875.31,22.2,Diesel,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2024,maruti_baleno.jpg,Top
+103.0,Honda Amaze 2024,Honda,951089.09,18.3,Petrol,Manual,5,Sedan,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1199.0,4.0,2024,honda_amaze.jpg,Top
+90.0,Volkswagen Virtus 2024,Volkswagen,1487539.67,22.3,Diesel,Automatic,5,Sedan,4.8,"City,Long Drive",Digital Cockpit|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,volkswagen_virtus.jpg,Top
+105.0,Skoda Slavia 2024,Skoda,1037962.59,20.1,Diesel,Manual,5,Sedan,4.8,"City,Long Drive",Sunroof|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,skoda_slavia.jpg,Mid
+61.0,Kia Seltos 2024,Kia,1332061.52,18.5,Diesel,Automatic,5,SUV,4.6,"Family,Long Drive",Sunroof|Cruise Control|Airbags|ADAS,1497.0,5.0,2024,kia_seltos.jpg,Mid
+20.0,Nissan Magnite,Nissan,630602.21,19.2,Petrol,Automatic,5,SUV,4.3,"City,Family",360 Camera|Wireless Charger|JBL Audio|Air Purifier,999.0,4.0,2023,nissan_magnite.jpg,Mid
+25.0,Honda Elevate,Honda,1286337.5,18.0,Petrol,Manual,5,SUV,4.5,"Family,City",Lane Keep Assist|ADAS|Wireless Charging|Sunroof,1498.0,5.0,2023,honda_elevate.jpg,Base
+2.0,Hyundai Creta,Hyundai,1006808.91,18.5,Diesel,Manual,5,SUV,4.7,"Family,Long Drive",Sunroof|Cruise Control|Touchscreen|Climate Control,1493.0,5.0,2023,hyundai_creta.jpg,Top
+22.0,Hyundai i20,Hyundai,821085.28,20.9,Diesel,Manual,5,Hatchback,4.4,"City,Family",BlueLink|Sunroof|Wireless Charging|Digital Cluster,998.0,4.0,2023,hyundai_i20.jpg,Top
+7.0,Toyota Fortuner,Toyota,2787383.34,16.0,Petrol,Automatic,7,SUV,4.9,"Family,Long Drive,Off-road",4WD|Leather Seats|Premium Audio|Adaptive Cruise,2755.0,5.0,2023,toyota_fortuner.jpg,Mid
+15.0,Toyota Glanza,Toyota,607484.75,22.1,CNG,Manual,5,Hatchback,4.3,"City,Family",Heads-up Display|Ambient Lighting|Smart Infotainment,1197.0,4.0,2023,toyota_glanza.jpg,Mid
+4.0,Honda City,Honda,1346959.86,20.1,CNG,Automatic,5,Sedan,4.4,"City,Long Drive",Lane Watch|Cruise Control|Sunroof|Alexa Integration,1498.0,4.0,2023,honda_city.jpg,Base
+19.0,Renault Kiger,Renault,555501.4,17.6,CNG,Automatic,5,SUV,4.2,"City,Family",Wireless Android Auto|LED DRLs|8-inch Touchscreen,999.0,4.0,2023,renault_kiger.jpg,Base
+18.0,Skoda Kushaq,Skoda,1103979.41,18.8,Diesel,Manual,5,SUV,4.5,"Family,Long Drive",Ventilated Seats|Virtual Cockpit|Sunroof|6 Airbags,1498.0,5.0,2023,skoda_kushaq.jpg,Base
+12.0,Maruti Baleno,Maruti Suzuki,664254.37,21.4,Diesel,Automatic,5,Hatchback,4.4,"City,Family",Smartplay Studio|Head-up Display|Premium Interior,1197.0,4.0,2023,maruti_baleno.jpg,Mid
+21.0,Jeep Compass,Jeep,2155809.17,12.6,Petrol,Automatic,5,SUV,4.7,"Off-road,Long Drive",4x4|Panoramic Sunroof|Uconnect|Dual-zone Climate,1956.0,5.0,2023,jeep_compass.jpg,Base
+10.0,Tata Punch,Tata,550496.23,20.6,CNG,Automatic,5,SUV,4.4,"City,Family",Ground Clearance|Spacious|Safety Features|Digital Cluster,1199.0,5.0,2023,tata_punch.jpg,Top
+8.0,Maruti Altok10,Maruti Suzuki,330966.13,22.3,Petrol,Manual,5,Hatchback,4.2,City,Compact Design|Fuel Efficient|Easy Parking,796.0,3.0,2023,maruti_altok10.jpg,Base
+27.0,Toyota Innova Crysta,Toyota,1856583.31,15.8,Diesel,Manual,7,MUV,4.8,"Family,Long Drive",Premium Interior|Captain Seats|Spacious|Reliable,2393.0,5.0,2023,toyota_innova.jpg,Top
+28.0,Maruti Brezza,Maruti Suzuki,969107.96,18.8,CNG,Manual,5,SUV,4.5,"City,Family",Head-up Display|360 Camera|Sunroof|Connected Car,1462.0,4.0,2023,maruti_brezza.jpg,Top
+3.0,Tata Nexon EV,Tata,1352064.1,271.6,Diesel,Automatic,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,tata_nexonev.jpg,Top
+72.0,Tata Safari 2023,Tata,2021520.51,14.4,Petrol,Automatic,7,SUV,4.4,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2023,tata_safari.jpg,Base
+5.0,Mahindra Thar,Mahindra,1700354.39,16.6,Petrol,Automatic,4,SUV,4.8,"Off-road,Long Drive",4x4|Convertible Top|Off-road Tyres|Hill Assist,2184.0,4.0,2023,mahindra_thar.jpg,Base
+30.0,Kia Carens,Kia,1008103.24,17.5,Petrol,Automatic,7,MUV,4.6,"Family,Long Drive",6/7 Seater|Ventilated Seats|UVO Connect|Sunroof,1497.0,5.0,2023,kia_carens.jpg,Top
+1.0,Maruti Suzuki Swift,Maruti Suzuki,640247.12,26.0,Diesel,Automatic,5,Hatchback,4.5,"City,Family",ABS|Airbags|Power Steering|AC,1197.0,4.0,2023,maruti_swift.jpg,Top
+26.0,Maruti Ertiga,Maruti Suzuki,834867.49,18.4,Diesel,Automatic,7,MUV,4.4,"Family,Long Drive",7 Seater|Spacious|Fuel Efficient|Touchscreen,1462.0,4.0,2023,maruti_ertiga.jpg,Base
+,Hyundai i10 Nios 2023,Hyundai,15.03,12.4,CNG,Automatic,6,Pickup,,,,,,2023,,Top
+,Hyundai i10 Nios 2024,Hyundai,31.1,20.7,Diesel,Automatic,5,SUV,,,,,,2024,,Base
+,Hyundai i10 Nios 2025,Hyundai,19.1,9.7,Diesel,Manual,5,Hatchback,,,,,,2025,,Base
+,Hyundai i20 2023,Hyundai,18.76,21.6,Petrol,Manual,7,Sedan,,,,,,2023,,Top
+,Hyundai i20 2024,Hyundai,31.28,12.6,CNG,Manual,6,MUV,,,,,,2024,,Mid
+,Hyundai i20 2025,Hyundai,10.21,24.2,Diesel,Automatic,4,Pickup,,,,,,2025,,Base
+,Hyundai Aura 2023,Hyundai,14.48,15.7,Diesel,Manual,5,MUV,,,,,,2023,,Base
+,Hyundai Aura 2024,Hyundai,16.92,26.0,CNG,Manual,6,SUV,,,,,,2024,,Top
+,Hyundai Aura 2025,Hyundai,19.1,10.3,Diesel,Manual,7,SUV,,,,,,2025,,Mid
+,Hyundai Verna 2023,Hyundai,29.78,24.3,CNG,Automatic,6,SUV,,,,,,2023,,Top
+,Hyundai Verna 2024,Hyundai,46.04,13.0,Diesel,Automatic,7,Sedan,,,,,,2024,,Mid
+,Hyundai Creta 2023,Hyundai,25.54,19.7,Diesel,Automatic,4,Sedan,,,,,,2023,,Mid
+,Hyundai Creta 2024,Hyundai,28.45,28.9,Diesel,Automatic,4,Pickup,,,,,,2024,,Top
+,Hyundai Creta 2025,Hyundai,36.82,23.6,CNG,Automatic,6,MUV,,,,,,2025,,Base
+,Hyundai Alcazar 2023,Hyundai,17.26,30.5,Petrol,Manual,6,Hatchback,,,,,,2023,,Base
+,Hyundai Alcazar 2024,Hyundai,30.08,14.1,Diesel,Manual,7,Pickup,,,,,,2024,,Base
+,Hyundai Alcazar 2025,Hyundai,18.14,11.5,Petrol,Manual,4,MUV,,,,,,2025,,Mid
+,Hyundai Venue 2023,Hyundai,25.07,20.2,Diesel,Automatic,5,Hatchback,,,,,,2023,,Mid
+,Hyundai Venue 2024,Hyundai,37.78,24.1,Diesel,Manual,5,MUV,,,,,,2024,,Top
+,Hyundai Exter 2023,Hyundai,5.63,29.8,Diesel,Automatic,4,SUV,,,,,,2023,,Mid
+,Hyundai Exter 2024,Hyundai,19.87,19.2,CNG,Automatic,6,Sedan,,,,,,2024,,Mid
+,Hyundai Exter 2025,Hyundai,22.15,9.4,CNG,Automatic,5,SUV,,,,,,2025,,Mid
+,Hyundai Tucson 2023,Hyundai,29.61,19.2,Diesel,Manual,5,SUV,,,,,,2023,,Base
+,Hyundai Tucson 2024,Hyundai,30.18,22.6,Petrol,Automatic,4,MUV,,,,,,2024,,Top
+,Hyundai Tucson 2025,Hyundai,55.53,12.8,Diesel,Automatic,6,Sedan,,,,,,2025,,Mid
+,Honda Amaze 2023,Honda,18.59,28.1,CNG,Manual,7,SUV,,,,,,2023,,Base
+,Honda Amaze 2025,Honda,41.84,31.1,Petrol,Automatic,7,MUV,,,,,,2025,,Top
+,Honda City 2023,Honda,33.44,17.8,Petrol,Automatic,4,MUV,,,,,,2023,,Base
+,Honda City 2024,Honda,29.66,23.0,CNG,Automatic,5,MUV,,,,,,2024,,Base
+,Honda City 2025,Honda,32.1,28.2,CNG,Manual,7,Sedan,,,,,,2025,,Mid
+,Honda Elevate 2023,Honda,16.16,29.7,CNG,Manual,4,Hatchback,,,,,,2023,,Top
+,Honda Elevate 2024,Honda,42.62,20.3,CNG,Automatic,6,Pickup,,,,,,2024,,Base
+,Honda Elevate 2025,Honda,25.3,17.0,Diesel,Manual,4,SUV,,,,,,2025,,Mid
+,Honda WR-V 2023,Honda,11.56,19.4,CNG,Manual,6,SUV,,,,,,2023,,Mid
+,Honda WR-V 2024,Honda,29.39,12.4,Diesel,Manual,5,Hatchback,,,,,,2024,,Mid
+,Honda WR-V 2025,Honda,30.12,26.8,Petrol,Automatic,4,SUV,,,,,,2025,,Mid
+,Mahindra Bolero 2023,Mahindra,10.31,10.8,Diesel,Automatic,7,Pickup,,,,,,2023,,Mid
+,Mahindra Bolero 2024,Mahindra,18.33,15.7,Diesel,Manual,7,Sedan,,,,,,2024,,Mid
+,Mahindra Bolero 2025,Mahindra,30.11,18.0,CNG,Manual,7,Pickup,,,,,,2025,,Base
+,Mahindra Scorpio N 2023,Mahindra,24.83,23.9,CNG,Manual,7,SUV,,,,,,2023,,Base
+,Mahindra Scorpio N 2024,Mahindra,37.8,15.3,CNG,Automatic,5,SUV,,,,,,2024,,Top
+,Mahindra XUV300 2023,Mahindra,42.91,16.5,Diesel,Automatic,5,SUV,,,,,,2023,,Top
+,Mahindra XUV300 2024,Mahindra,42.25,18.1,Petrol,Manual,7,MUV,,,,,,2024,,Mid
+,Mahindra XUV300 2025,Mahindra,21.91,13.2,Diesel,Automatic,4,MUV,,,,,,2025,,Mid
+,Mahindra XUV700 2023,Mahindra,37.14,23.4,CNG,Automatic,5,Sedan,,,,,,2023,,Top
+,Mahindra XUV700 2024,Mahindra,28.98,31.3,Petrol,Automatic,4,Sedan,,,,,,2024,,Top
+,Mahindra Thar 2023,Mahindra,43.24,31.3,CNG,Automatic,6,Hatchback,,,,,,2023,,Mid
+,Mahindra Thar 2024,Mahindra,27.68,24.9,Diesel,Automatic,4,Pickup,,,,,,2024,,Mid
+,Mahindra Thar 2025,Mahindra,33.95,10.9,CNG,Automatic,5,MUV,,,,,,2025,,Top
+,Mahindra Marazzo 2023,Mahindra,23.82,25.1,Diesel,Automatic,5,SUV,,,,,,2023,,Top
+,Mahindra Marazzo 2024,Mahindra,38.96,15.9,Petrol,Automatic,6,Pickup,,,,,,2024,,Top
+,Mahindra Marazzo 2025,Mahindra,32.7,24.2,CNG,Automatic,6,SUV,,,,,,2025,,Mid
+,Toyota Glanza 2023,Toyota,28.41,19.0,Petrol,Manual,5,Hatchback,,,,,,2023,,Mid
+,Toyota Glanza 2024,Toyota,37.69,26.5,Petrol,Manual,5,Pickup,,,,,,2024,,Mid
+,Toyota Glanza 2025,Toyota,12.94,23.8,CNG,Manual,7,MUV,,,,,,2025,,Base
+,Toyota Urban Cruiser 2023,Toyota,8.03,28.3,CNG,Manual,6,Hatchback,,,,,,2023,,Mid
+,Toyota Urban Cruiser 2024,Toyota,22.66,20.8,Diesel,Manual,6,MUV,,,,,,2024,,Mid
+,Toyota Urban Cruiser 2025,Toyota,27.71,20.1,Petrol,Manual,5,SUV,,,,,,2025,,Top
+,Toyota Innova Crysta 2023,Toyota,38.66,14.7,Diesel,Automatic,5,MUV,,,,,,2023,,Top
+,Toyota Innova Crysta 2024,Toyota,38.77,28.5,Petrol,Manual,6,MUV,,,,,,2024,,Base
+,Toyota Innova Crysta 2025,Toyota,29.61,23.4,CNG,Manual,7,SUV,,,,,,2025,,Mid
+,Toyota Innova Hycross 2023,Toyota,14.41,28.5,CNG,Automatic,4,Sedan,,,,,,2023,,Top
+,Toyota Innova Hycross 2024,Toyota,35.04,14.4,Petrol,Manual,4,Pickup,,,,,,2024,,Base
+,Toyota Innova Hycross 2025,Toyota,24.26,14.9,Diesel,Manual,4,Hatchback,,,,,,2025,,Mid
+,Toyota Fortuner 2023,Toyota,44.79,14.4,Petrol,Automatic,6,Sedan,,,,,,2023,,Top
+,Toyota Fortuner 2024,Toyota,9.71,31.2,CNG,Automatic,4,Sedan,,,,,,2024,,Mid
+,Toyota Fortuner 2025,Toyota,28.59,9.5,CNG,Manual,5,Hatchback,,,,,,2025,,Mid
+,Toyota Hilux 2023,Toyota,42.41,15.5,Diesel,Manual,5,Hatchback,,,,,,2023,,Base
+,Toyota Hilux 2024,Toyota,23.94,22.7,CNG,Manual,6,MUV,,,,,,2024,,Base
+,Toyota Hilux 2025,Toyota,29.52,14.5,Diesel,Manual,6,Hatchback,,,,,,2025,,Base
+,Tata Tiago 2023,Tata,35.33,12.0,Petrol,Manual,5,Sedan,,,,,,2023,,Base
+,Tata Tiago 2024,Tata,14.15,27.6,CNG,Automatic,4,Sedan,,,,,,2024,,Base
+,Tata Tiago 2025,Tata,22.09,14.0,Petrol,Automatic,6,Pickup,,,,,,2025,,Top
+,Tata Tigor 2023,Tata,38.28,30.6,CNG,Automatic,7,SUV,,,,,,2023,,Base
+,Tata Tigor 2024,Tata,38.17,31.8,Petrol,Manual,6,MUV,,,,,,2024,,Mid
+,Tata Tigor 2025,Tata,22.64,16.5,Petrol,Automatic,5,Hatchback,,,,,,2025,,Top
+,Tata Altroz 2023,Tata,16.43,21.8,Petrol,Manual,4,MUV,,,,,,2023,,Base
+,Tata Altroz 2024,Tata,15.11,25.5,CNG,Automatic,5,Hatchback,,,,,,2024,,Top
+,Tata Nexon 2023,Tata,27.31,13.9,Petrol,Manual,5,Pickup,,,,,,2023,,Base
+,Tata Nexon 2024,Tata,17.04,19.0,Diesel,Manual,4,Sedan,,,,,,2024,,Top
+,Tata Nexon 2025,Tata,22.14,16.5,Diesel,Manual,5,SUV,,,,,,2025,,Base
+,Tata Harrier 2023,Tata,19.06,14.8,Petrol,Manual,7,SUV,,,,,,2023,,Base
+,Tata Harrier 2024,Tata,51.47,10.5,Petrol,Manual,7,Hatchback,,,,,,2024,,Mid
+,Tata Safari 2024,Tata,15.73,11.0,CNG,Automatic,5,Pickup,,,,,,2024,,Top
