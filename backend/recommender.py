@@ -47,8 +47,7 @@ class CarRecommender:
                 axis=1
             )
 
-        # Alias engine_size as horsepower for frontend compatibility
-        self.df['horsepower'] = self.df['engine_size']
+        # Engine size is already correctly defined. We removed the incorrect horsepower alias.
 
         # Final JSON-safe cleanup for API stability
         self.df = self.df.replace([np.inf, -np.inf], np.nan)
@@ -103,8 +102,10 @@ class CarRecommender:
         results = self.df.copy()
         results['score'] = similarities
         
-        # Sort and return top N
-        recommendations = results.sort_values(by='score', ascending=False).head(top_n)
+        # Sort, deduplicate, and return top N
+        recommendations = results.sort_values(by='score', ascending=False)
+        recommendations = recommendations.drop_duplicates(subset=['make', 'model'], keep='first')
+        recommendations = recommendations.head(top_n)
         
         # Add reasons based on preference match
         recommendations['reason'] = recommendations.apply(lambda row: self._generate_reason(row, user_preferences), axis=1)
@@ -127,7 +128,7 @@ class CarRecommender:
         if row['safety_rating'] >= 5:
             reasons.append("Top-tier safety architecture")
         
-        if 'mileage_priority' in pref and pref['mileage_priority'] and row['fuel_economy'] > self.df['fuel_economy'].mean():
+        if pref.get('fuel_economy', 0) >= 35 and row['fuel_economy'] > self.df['fuel_economy'].mean():
             reasons.append("High-efficiency powertrain")
 
         return " | ".join(reasons[:2]) if reasons else "Selected for high structural compatibility"
@@ -138,7 +139,7 @@ class CarRecommender:
             'body_type_distribution': self.df['body_type'].value_counts().to_dict(),
             'fuel_type_distribution': self.df['fuel_type'].value_counts().to_dict(),
             'avg_mileage_by_fuel': self.df.groupby('fuel_type')['fuel_economy'].mean().fillna(0).to_dict(),
-            'price_vs_hp': self.df[['price', 'horsepower', 'model']].fillna(0).to_dict(orient='records')
+            'price_vs_hp': self.df[['price', 'engine_size', 'model']].fillna(0).to_dict(orient='records')
         }
         return analytics
 

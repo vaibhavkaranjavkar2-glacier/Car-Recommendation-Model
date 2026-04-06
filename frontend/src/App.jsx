@@ -48,7 +48,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', path: '/', icon: HomeIcon },
     { name: 'Explore', path: '/explore', icon: Search },
-    { name: 'AI Recommendation', path: '/recommend', icon: Star },
+    { name: 'Recommendation', path: '/recommend', icon: Star },
     { name: 'Vehicle Compare', path: '/compare', icon: GitCompare },
     { name: 'Analytics', path: '/analytics', icon: LayoutDashboard },
   ];

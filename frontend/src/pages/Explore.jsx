@@ -1,9 +1,12 @@
+import { API_BASE } from '../config';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Search, Filter, Fuel, Activity, Users, Star, ArrowUpDown, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Explore = () => {
+    const navigate = useNavigate();
     const [cars, setCars] = useState([]);
     const [loading, setLoading] = useState(true);
     const [searchQuery, setSearchQuery] = useState('');
@@ -11,13 +14,13 @@ const Explore = () => {
         body_type: 'All',
         fuel_type: 'All'
     });
-    const [sortBy, setSortBy] = useState('price');
+    const [sortBy, setSortBy] = useState('random');
 
     useEffect(() => {
         const fetchCars = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/cars');
-                setCars(response.data);
+                const response = await axios.get(`${API_BASE}/cars`);
+                setCars(response.data.sort(() => 0.5 - Math.random()));
             } catch (error) {
                 console.error("Error fetching cars:", error);
             } finally {
@@ -28,7 +31,10 @@ const Explore = () => {
     }, []);
 
     const [showAIDropdown, setShowAIDropdown] = useState(false);
-    const [recentSearches] = useState(['Tata Sierra', 'Skoda Slavia', 'Tata Tiago']);
+    const [recentSearches, setRecentSearches] = useState(() => {
+        const saved = localStorage.getItem('recentSearches');
+        return saved ? JSON.parse(saved) : ['Hyundai Creta', 'Tata Nexon', 'Mahindra Thar'];
+    });
     const [aiSuggestions] = useState([
         "Best automatic car under ₹12 lakh?",
         "Which cars are best for daily office runs?",
@@ -43,7 +49,7 @@ const Explore = () => {
         setShowAIDropdown(false);
         setIsThinking(true);
         try {
-            const res = await axios.post('http://localhost:8000/chat', { query });
+            const res = await axios.post(`${API_BASE}/chat`, { query });
             setAiAnswer(res.data);
         } catch (error) {
             console.error("AI Error:", error);
@@ -54,38 +60,45 @@ const Explore = () => {
 
     const handleSearchSubmit = (e) => {
         if(e) e.preventDefault();
+        
+        if (searchQuery.trim() && !recentSearches.includes(searchQuery)) {
+            const updated = [searchQuery, ...recentSearches].slice(0, 3);
+            setRecentSearches(updated);
+            localStorage.setItem('recentSearches', JSON.stringify(updated));
+        }
+
         if (searchQuery.includes('?') || searchQuery.length > 20) {
             handleAISuggestion(searchQuery);
         }
     };
 
     const filteredResults = cars.filter(car => {
-        const matchesSearch = car.make.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                             car.model.toLowerCase().includes(searchQuery.toLowerCase());
+        const fullName = `${car.make} ${car.model}`.toLowerCase();
+        const matchesSearch = fullName.includes(searchQuery.toLowerCase());
         const matchesBody = filter.body_type === 'All' || car.body_type === filter.body_type;
         const matchesFuel = filter.fuel_type === 'All' || car.fuel_type === filter.fuel_type;
         return matchesSearch && matchesBody && matchesFuel;
     });
 
-    // If searching, only show the latest version of each model
-    let displayCars = filteredResults;
-    if (searchQuery.trim() !== '' && !aiAnswer) {
-        const latestModels = new Map();
-        filteredResults.forEach(car => {
-            const key = `${car.make}-${car.model}`.toLowerCase();
-            if (!latestModels.has(key) || car.year > latestModels.get(key).year) {
-                latestModels.set(key, car);
-            }
-        });
-        displayCars = Array.from(latestModels.values());
-    }
-
-    const sortedCars = displayCars.sort((a, b) => {
-        if (sortBy === 'price') return a.price - b.price;
-        if (sortBy === 'horsepower') return b.horsepower - a.horsepower;
-        if (sortBy === 'year') return b.year - a.year;
-        return 0;
+    // Always deduplicate to ensure unique cars are shown
+    const latestModels = new Map();
+    filteredResults.forEach(car => {
+        const key = `${car.make}-${car.model}`.toLowerCase();
+        if (!latestModels.has(key) || car.year > latestModels.get(key).year) {
+            latestModels.set(key, car);
+        }
     });
+
+    let sortedCars = Array.from(latestModels.values());
+    
+    if (sortBy === 'price') sortedCars.sort((a, b) => a.price - b.price);
+    else if (sortBy === 'engine_size') sortedCars.sort((a, b) => b.engine_size - a.engine_size);
+    else if (sortBy === 'year') sortedCars.sort((a, b) => b.year - a.year);
+
+    // Limit to 6 items if not searching specifically or viewing AI answers
+    if (searchQuery.trim() === '' && !aiAnswer) {
+        sortedCars = sortedCars.slice(0, 6);
+    }
 
     return (
         <div className="page-container" onClick={() => setShowAIDropdown(false)}>
@@ -210,7 +223,7 @@ const Explore = () => {
                                                     <div style={{ fontWeight: 600 }}>{car.make} {car.model}</div>
                                                     <div style={{ fontSize: '0.8rem', color: '#94a3b8' }}>₹{car.price.toLocaleString()} • {car.safety_rating} Star Safety</div>
                                                 </div>
-                                                <button className="btn btn-secondary" style={{ padding: '8px 15px', fontSize: '0.75rem' }}>View</button>
+                                                <button className="btn btn-secondary" onClick={() => navigate(`/car/${car.id}`)} style={{ padding: '8px 15px', fontSize: '0.75rem' }}>View</button>
                                             </div>
                                         ))}
                                     </div>
@@ -230,17 +243,18 @@ const Explore = () => {
                         <option>All</option>
                         <option>Sedan</option>
                         <option>SUV</option>
-                        <option>Truck</option>
-                        <option>Coupe</option>
                         <option>Hatchback</option>
+                        <option>MUV</option>
+                        <option>Pickup</option>
                     </select>
                 </div>
 
                 <div style={{ flex: 1, minWidth: '150px' }}>
                     <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.85rem', color: '#94a3b8' }}>Sort By</label>
                     <select className="form-control" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+                        <option value="random">Random Discovery</option>
                         <option value="price">Price: Low to High</option>
-                        <option value="horsepower">Performance (HP)</option>
+                        <option value="engine_size">Performance (cc)</option>
                         <option value="year">Newest First</option>
                     </select>
                 </div>
@@ -260,12 +274,12 @@ const Explore = () => {
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 className="glass car-card"
                             >
-                                <div style={{ height: '140px', background: 'linear-gradient(45deg, #1e293b, #0f172a)', display: 'flex', alignItems: 'center', justifyContent: 'center', borderBottom: '1px solid var(--glass-border)' }}>
-                                    <div style={{ textAlign: 'center' }}>
-                                        <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(255,255,255,0.05)' }}>{car.make}</div>
-                                        <div style={{ marginTop: '-15px', color: '#6366f1', fontWeight: 700 }}>{car.model}</div>
+                                <div style={{ height: '140px', background: `linear-gradient(45deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9)), url('${car.image_url || "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=600"}')`, backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', borderBottom: '1px solid var(--glass-border)', position: 'relative' }}>
+                                    <div style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
+                                        <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(255,255,255,0.3)' }}>{car.make}</div>
+                                        <div style={{ marginTop: '-15px', color: '#818cf8', fontWeight: 700 }}>{car.model}</div>
                                     </div>
-                                    <div className="car-price" style={{ top: '15px', right: '15px' }}>₹{car.price.toLocaleString()}</div>
+                                    <div className="car-price" style={{ position: 'absolute', top: '15px', right: '15px', zIndex: 2 }}>₹{car.price.toLocaleString()}</div>
                                 </div>
                                 <div className="car-content">
                                     <div className="car-title">
@@ -274,11 +288,11 @@ const Explore = () => {
                                     </div>
                                     <div className="car-specs" style={{ marginBottom: '20px' }}>
                                         <div className="spec-item"><Fuel size={14} /> {car.fuel_type}</div>
-                                        <div className="spec-item"><Activity size={14} /> {car.horsepower} HP</div>
+                                        <div className="spec-item"><Activity size={14} /> {car.engine_size} cc</div>
                                         <div className="spec-item"><Users size={14} /> {car.seating_capacity}</div>
                                         <div className="spec-item"><Star size={14} color="#fbbf24" fill="#fbbf24" style={{ opacity: 0.8 }} /> {car.safety_rating}</div>
                                     </div>
-                                    <button className="btn btn-secondary" style={{ width: '100%', fontSize: '0.8rem' }}>Specifications</button>
+                                    <button className="btn btn-secondary" onClick={() => navigate(`/car/${car.id}`)} style={{ width: '100%', fontSize: '0.8rem' }}>Specifications</button>
                                 </div>
                             </motion.div>
                         ))}

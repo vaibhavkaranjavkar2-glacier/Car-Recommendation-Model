@@ -1,3 +1,4 @@
+import { API_BASE } from '../config';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { 
@@ -16,7 +17,7 @@ const Analytics = () => {
     useEffect(() => {
         const fetchAnalytics = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/analytics');
+                const response = await axios.get(`${API_BASE}/analytics`);
                 setAnalytics(response.data);
             } catch (error) {
                 console.error("Error fetching analytics:", error);
@@ -47,7 +48,7 @@ const Analytics = () => {
 
     const priceVsHp = analytics.price_vs_hp.map(car => ({
         price: car.price,
-        hp: car.horsepower,
+        hp: car.engine_size,
         model: car.model
     }));
 
@@ -141,6 +142,29 @@ const Analytics = () => {
                         </PieChart>
                     </ResponsiveContainer>
                 </motion.div>
+                
+                <motion.div 
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="glass" 
+                    style={{ padding: '30px', height: '400px', gridColumn: 'span 2' }}
+                >
+                    <h3 style={{ marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <Activity size={20} color="#10b981" /> Fuel Efficiency Analysis
+                    </h3>
+                    <ResponsiveContainer width="100%" height="80%">
+                        <AreaChart data={mileageDist}>
+                            <CartesianGrid strokeDasharray="3 3" stroke="var(--chart-grid)" vertical={false} />
+                            <XAxis dataKey="name" stroke="var(--chart-text)" />
+                            <YAxis stroke="var(--chart-text)" unit=" kmpl" />
+                            <Tooltip 
+                                contentStyle={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '12px' }}
+                                itemStyle={{ color: 'var(--foreground)' }}
+                            />
+                            <Area type="monotone" dataKey="mpg" stroke="#10b981" fill="#10b981" fillOpacity={0.3} />
+                        </AreaChart>
+                    </ResponsiveContainer>
+                </motion.div>
             </div>
             
             <div className="glass" style={{ marginTop: '40px', padding: '30px', display: 'flex', alignItems: 'center', gap: '20px' }}>
@@ -150,7 +174,7 @@ const Analytics = () => {
                 <div>
                     <h4 style={{ color: '#6366f1' }}>Data Science Insight</h4>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>
-                        The scatter plot reveals strong correlation between horsepower and market valuation, yet certain 'Value Hybrid' segments offer premium performance at standard pricing. 
+                        The scatter plot reveals strong correlation between engine displacement (cc) and market valuation, yet certain 'Value Hybrid' segments offer premium performance at standard pricing. 
                     </p>
                 </div>
             </div>

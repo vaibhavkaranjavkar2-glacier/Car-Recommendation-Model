@@ -1,3 +1,4 @@
+import { API_BASE } from '../config';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { GitCompare, Plus, X, Search, Check, Info } from 'lucide-react';
@@ -12,7 +13,7 @@ const Compare = () => {
     useEffect(() => {
         const fetchCars = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/cars');
+                const response = await axios.get(`${API_BASE}/cars`);
                 setCars(response.data);
             } catch (error) {
                 console.error("Error fetching cars:", error);
@@ -25,7 +26,7 @@ const Compare = () => {
         const fetchComparison = async () => {
             if (selectedIds.length > 0) {
                 try {
-                    const response = await axios.post('http://localhost:8000/compare', selectedIds);
+                    const response = await axios.post(`${API_BASE}/compare`, selectedIds);
                     setComparisonData(response.data);
                 } catch (error) {
                     console.error("Error fetching comparison:", error);
@@ -107,7 +108,6 @@ const Compare = () => {
                                 {label: 'Fuel Type', key: 'fuel_type'},
                                 {label: 'Transmission', key: 'transmission'},
                                 {label: 'Engine Size', key: 'engine_size', suffix: ' cc'},
-                                {label: 'Horsepower', key: 'horsepower', suffix: ' HP'},
                                 {label: 'Safety Rating', key: 'safety_rating', suffix: '/5'},
                                 {label: 'Seating', key: 'seating_capacity', suffix: ' Persons'},
                                 {label: 'Efficiency', key: 'fuel_economy', suffix: ' km/l'}
@@ -129,8 +129,8 @@ const Compare = () => {
                         <div style={{ color: '#e2e8f0', fontSize: '0.95rem', lineHeight: 1.6 }}>
                             {comparisonData.length > 1 && (
                                 <p>
-                                    Our model indicates that the <strong>{comparisonData.sort((a,b) => a.price - b.price)[0].model}</strong> offers the best entry value. 
-                                    However, the <strong>{comparisonData.sort((a,b) => b.horsepower - a.horsepower)[0].model}</strong> leads in raw performance by <strong>{Math.round((comparisonData.sort((a,b) => b.horsepower - a.horsepower)[0].horsepower / comparisonData.sort((a,b) => a.horsepower - b.horsepower)[0].horsepower - 1) * 100)}%</strong>. 
+                                    Our model indicates that the <strong>{[...comparisonData].sort((a,b) => a.price - b.price)[0].model}</strong> offers the best entry value. 
+                                    However, the <strong>{[...comparisonData].sort((a,b) => b.engine_size - a.engine_size)[0].model}</strong> leads in raw performance by <strong>{Math.round(([...comparisonData].sort((a,b) => b.engine_size - a.engine_size)[0].engine_size / [...comparisonData].sort((a,b) => a.engine_size - b.engine_size)[0].engine_size - 1) * 100)}%</strong>. 
                                     {comparisonData.some(c => c.fuel_type === 'Electric') && " The electric drivetrain options present a significant long-term TCR (Total Cost of ownership) reduction."}
                                 </p>
                             )}

@@ -20,7 +20,7 @@ app.add_middleware(
 )
 
 # Initialize recommender
-data_path = os.path.join(os.path.dirname(__file__), "../data/final_latest_variety_500.csv")
+data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../data/final_latest_variety_500.csv"))
 recommender = CarRecommender(data_path)
 
 class UserPreferences(BaseModel):
@@ -29,6 +29,8 @@ class UserPreferences(BaseModel):
     fuel_type: Optional[str] = None
     mileage_priority: Optional[bool] = False
     safety_priority: Optional[bool] = False
+    transmission: Optional[str] = None
+    seating_capacity: Optional[int] = None
 
 @app.get("/")
 def home():
@@ -41,7 +43,10 @@ def get_all_cars():
 @app.get("/cars/{car_id}")
 def get_car(car_id: int):
     try:
-        return recommender.get_car_by_id(car_id)
+        car = recommender.get_car_by_id(car_id)
+        if not car:
+            raise ValueError()
+        return car
     except:
         raise HTTPException(status_code=404, detail="Car not found")
 
@@ -55,6 +60,11 @@ def get_recommendations(prefs: UserPreferences):
         'fuel_economy': 40 if prefs.mileage_priority else recommender.df['fuel_economy'].mean(),
         'safety_rating': 5 if prefs.safety_priority else recommender.df['safety_rating'].mean()
     }
+    
+    if prefs.transmission:
+        user_pref_dict['transmission'] = prefs.transmission
+    if prefs.seating_capacity:
+        user_pref_dict['seating_capacity'] = prefs.seating_capacity
     
     return recommender.recommend(user_pref_dict)
 
@@ -86,7 +96,7 @@ def ai_chat(req: ChatRequest):
     }
     
     # Extract Budget
-    prices = re.findall(r'\d+', query)
+    prices = re.findall(r'(\d+)\s*(?:lakh|lac|l)', query)
     if prices:
         val = int(prices[0])
         intents["budget"] = val * 100000 if val < 100 else val
@@ -142,10 +152,14 @@ def ai_chat(req: ChatRequest):
             "cars": []
         }
     
-    top_results = results.sort_values(by=intents["priority"], ascending=False).head(3)
+    top_results = results.sort_values(by=intents["priority"], ascending=False).drop_duplicates(subset=['make', 'model']).head(3)
     car_list = [f"{c['make']} {c['model']}" for _, c in top_results.iterrows()]
     
-    analysis_context = " ".join(filters_applied)
+    if not filters_applied:
+        analysis_context = "general preferences"
+    else:
+        analysis_context = ", ".join(filters_applied)
+        
     priority_msg = {
         "safety_rating": "prioritizing maximum safety for your family",
         "fuel_economy": "optimized for the best fuel efficiency",

@@ -1,3 +1,4 @@
+import { API_BASE } from '../config';
 import React, { useState, useEffect, useRef } from 'react';
 import { MessageSquare, X, Send, Zap, User } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -57,7 +58,7 @@ const AIChatBot = () => {
         setIsTyping(true);
 
         try {
-            const response = await axios.post('http://localhost:8000/chat', { query });
+            const response = await axios.post(`${API_BASE}/chat`, { query });
             // Artificial delay to show dots
             setTimeout(() => {
                 setIsTyping(false);

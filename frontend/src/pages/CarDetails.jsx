@@ -1,3 +1,4 @@
+import { API_BASE } from '../config';
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -68,7 +69,7 @@ const CarDetails = () => {
                 </div>
                 
                 <p style={{ color: '#94a3b8', fontSize: '1.1rem', marginBottom: '40px', lineHeight: '1.8', maxWidth: '800px' }}>
-                    {car?.description || `The ${car?.make} ${car?.model} is an excellent choice for those looking for a ${car?.body_type}.`}
+                    {`The ${car?.year} ${car?.make} ${car?.model} is a standout ${car?.body_type?.toLowerCase() || 'vehicle'} that perfectly balances reliable performance with modern conveniences. Powered by a robust ${car?.engine_size}cc engine mated to an efficient ${car?.transmission?.toLowerCase() || 'standard'} transmission, it delivers an impressive fuel economy of ${car?.fuel_economy} kmpl on ${car?.fuel_type?.toLowerCase() || 'standard fuel'}. Safety remains a top priority, highlighted by a solid ${car?.safety_rating}-star safety rating. Additionally, it comfortably seats ${car?.seating_capacity} people, ensuring it is highly versatile for lengthy family road trips or daily commutes alike. At a competitive price of ₹${car?.price ? car.price.toLocaleString() : 'N/A'}, the ${car?.model} is engineered to provide incredible value and a premium driving experience in its segment.`}
                 </p>
                 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', marginBottom: '40px' }}>
