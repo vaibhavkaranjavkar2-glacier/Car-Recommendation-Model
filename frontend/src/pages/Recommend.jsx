@@ -396,9 +396,7 @@ const Recommend = () => {
                                         >
                                             <div className="car-image" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('${car.image_url ? `/cars/${car.image_url}` : "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=600"}')` }}>
                                                 <div className="car-price">₹{car.price.toLocaleString()}</div>
-                                                <div style={{ position: 'absolute', top: '15px', left: '15px' }}>
-                                                    <CircularProgress score={car.score} />
-                                                </div>
+
                                             </div>
                                             <div className="car-content">
                                                 <div className="car-title">

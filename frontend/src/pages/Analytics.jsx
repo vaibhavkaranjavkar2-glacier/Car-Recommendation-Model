@@ -183,6 +183,46 @@ const Analytics = () => {
                 </div>
             </div>
 
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))', gap: '30px', marginTop: '40px' }}>
+                <div className="glass" style={{ padding: '30px' }}>
+                    <h3 style={{ fontSize: '1rem', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '30px', display: 'flex', alignItems: 'center', gap: '10px' }}><Wallet size={18}/> Economic Index (Avg Price by Brand)</h3>
+                    <div style={{ height: '350px' }}>
+                        <ResponsiveContainer width="100%" height="100%">
+                            <BarChart data={[...brand_overview].sort((a, b) => b.avg_price - a.avg_price)} layout="vertical">
+                                <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" horizontal={false} />
+                                <XAxis type="number" stroke="var(--text-muted)" fontSize={11} tickFormatter={(v) => `${(v/100000).toFixed(0)}L`} />
+                                <YAxis dataKey="make" type="category" stroke="var(--text-muted)" fontSize={11} width={80} />
+                                <Tooltip cursor={{ fill: 'rgba(99,102,241,0.05)' }} contentStyle={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '12px' }} formatter={(v) => `₹${(v/100000).toFixed(2)} Lakhs`} />
+                                <Bar dataKey="avg_price" fill="#a855f7" radius={[0, 4, 4, 0]} barSize={18} />
+                            </BarChart>
+                        </ResponsiveContainer>
+                    </div>
+                </div>
+
+                <div className="glass" style={{ padding: '30px' }}>
+                    <h3 style={{ fontSize: '1rem', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '30px', display: 'flex', alignItems: 'center', gap: '10px' }}><LayoutDashboard size={18}/> Segment Market Share (Body Type)</h3>
+                    <div style={{ height: '350px', display: 'flex', alignItems: 'center' }}>
+                        <ResponsiveContainer width="100%" height="100%">
+                            <PieChart>
+                                <Pie 
+                                    data={distributions.body} 
+                                    cx="50%" cy="50%" 
+                                    innerRadius={70} 
+                                    outerRadius={110} 
+                                    paddingAngle={5} 
+                                    dataKey="value"
+                                    stroke="none"
+                                >
+                                    {distributions.body.map((entry, index) => (<Cell key={`item-${index}`} fill={COLORS[index % COLORS.length]} />))}
+                                </Pie>
+                                <Tooltip contentStyle={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '12px' }} />
+                                <Legend verticalAlign="bottom" height={36}/>
+                            </PieChart>
+                        </ResponsiveContainer>
+                    </div>
+                </div>
+            </div>
+
             <style>{`
                 @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
             `}</style>
