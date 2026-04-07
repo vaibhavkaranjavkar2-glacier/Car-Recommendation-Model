@@ -318,11 +318,7 @@ const Compare = () => {
                         </div>
                     </div>
 
-                    <div style={{ textAlign: 'center' }}>
-                        <button className="btn btn-secondary" style={{ padding: '12px 40px', background: 'var(--surface-light)', color: 'var(--foreground)', border: '1px solid var(--border)' }} onClick={() => window.print()}>
-                            <Share2 size={16} /> Print Full Multi-Layer Analysis
-                        </button>
-                    </div>
+
                 </motion.div>
             )}
             <style>{`
