@@ -1,18 +1,26 @@
+import os
 import sys
-from backend.recommender import CarRecommender
 
-try:
-    recommender = CarRecommender('data/final_latest_variety_500.csv')
-    user_pref_dict = {
-        'price': 1200000,
-        'body_type': 'SUV',
-        'fuel_type': 'Petrol',
-        'fuel_economy': 40,
-        'safety_rating': 5
-    }
-    recs = recommender.recommend(user_pref_dict)
-    print("Success")
-    print(recs[0])
-except Exception as e:
-    import traceback
-    traceback.print_exc()
+# Add backend to path
+backend_path = "c:/Users/Vaibhav/Videos/car-recommender/backend"
+sys.path.append(backend_path)
+from recommender import CarRecommender
+
+data_path = "c:/Users/Vaibhav/Videos/car-recommender/data/final_latest_variety_500.csv"
+recommender = CarRecommender(data_path)
+
+# Test preferences
+prefs = {
+    'price': 1200000,
+    'body_type': 'SUV',
+    'fuel_type': 'Electric',
+    'fuel_economy': 40,
+    'safety_rating': 5,
+    'transmission': 'Any',
+    'seating_capacity': 5
+}
+
+recommendations = recommender.recommend(prefs)
+print(f"Number of recommendations: {len(recommendations)}")
+for i, rec in enumerate(recommendations[:5]):
+    print(f"{i+1}. {rec['make']} {rec['model']} - {rec['fuel_type']} - Score: {rec.get('score', 'N/A')}")

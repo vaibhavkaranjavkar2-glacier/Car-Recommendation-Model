@@ -38,7 +38,9 @@ class CarRecommender:
         self.df['id'] = range(len(self.df))
         
         # Clean model name to avoid double brand (e.g., "Toyota Toyota Fortuner" -> "Toyota Fortuner")
-        self.df['model'] = self.df.apply(lambda x: str(x['model']).replace(str(x['make']) + ' ', ''), axis=1)
+        # and remove trailing years (e.g. "Virtus 2023" -> "Virtus") for better deduplication
+        self.df['model'] = self.df.apply(lambda x: str(x['model']).replace(str(x['make']) + ' ', '').strip(), axis=1)
+        self.df['model'] = self.df['model'].str.replace(r'\s*\b\d{4}\b\s*$', '', regex=True).str.strip()
         
         # Ensure description exists for the frontend
         if 'description' not in self.df.columns:
@@ -102,10 +104,21 @@ class CarRecommender:
         results = self.df.copy()
         results['score'] = similarities
         
+        # New Strict Filtering for Categorical Preferences: Must match exactly
+        for pref in ['body_type', 'fuel_type', 'transmission']:
+            val = user_preferences.get(pref)
+            if val and val not in ['All', 'Any']:
+                # Filter strictly by this category
+                results = results[results[pref] == val]
+
+        # New Strict Filtering for Electric Cars: IGNORE ALL OTHER PARAMETERS (Fallback logic)
+        if user_preferences.get('fuel_type') == 'Electric':
+             results = results[results['fuel_type'] == 'Electric']
+        
         # Sort, deduplicate, and return top N
         recommendations = results.sort_values(by='score', ascending=False)
         recommendations = recommendations.drop_duplicates(subset=['make', 'model'], keep='first')
-        recommendations = recommendations.head(top_n)
+        recommendations = recommendations.head(top_n if user_preferences.get('fuel_type') != 'Electric' else max(top_n, len(results)))
         
         # Add reasons based on preference match
         recommendations['reason'] = recommendations.apply(lambda row: self._generate_reason(row, user_preferences), axis=1)
@@ -134,12 +147,64 @@ class CarRecommender:
         return " | ".join(reasons[:2]) if reasons else "Selected for high structural compatibility"
 
     def get_analytics(self):
+        # 1. Dataset Overview
+        overview = {
+            'total_cars': int(len(self.df)),
+            'total_brands': int(self.df['make'].nunique()),
+            'price_min': float(self.df['price'].min()),
+            'price_max': float(self.df['price'].max()),
+            'avg_safety': float(self.df['safety_rating'].mean()),
+            'fuel_types_count': int(self.df['fuel_type'].nunique())
+        }
+
+        # 2. Feature Distributions
+        body_dist = self.df['body_type'].value_counts().reset_index()
+        body_dist.columns = ['name', 'value']
+        
+        fuel_dist = self.df['fuel_type'].value_counts().reset_index()
+        fuel_dist.columns = ['name', 'value']
+
+        trans_dist = self.df['transmission'].value_counts().reset_index()
+        trans_dist.columns = ['name', 'value']
+
+        # 3. Price vs Mileage Scatter (Sample 50 for performance)
+        scatter = self.df.sample(min(100, len(self.df)))[['price', 'fuel_economy', 'model', 'make']].to_dict(orient='records')
+
+        # 4. Top Brands by Safety
+        safety_by_brand = self.df.groupby('make')['safety_rating'].mean().sort_values(ascending=False).head(10).reset_index()
+        safety_by_brand.columns = ['brand', 'safety']
+
+        # 4.1 Average Price & Popularity by Brand
+        brand_stats = self.df.groupby('make').agg({
+            'price': 'mean',
+            'id': 'count'
+        }).reset_index().rename(columns={'id': 'popularity', 'price': 'avg_price'}).sort_values(by='popularity', ascending=False).head(12)
+
+        # 5. Model Evaluation (Performance Score Distribution)
+        # We'll simulate 50 "recommendation sessions" with random preferences to see the score spread
+        all_scores = []
+        for _ in range(20):
+            # Pick a random "user" profile
+            row = self.df.sample(1).iloc[0]
+            sims = cosine_similarity(self.transformer.transform(pd.DataFrame([row.to_dict()])), self.matrix).flatten()
+            all_scores.extend(sims.tolist())
+        
+        # Create a histogram frequencies
+        counts, bins = np.histogram(all_scores, bins=10, range=(0.5, 1.0))
+        eval_scores = [{'score': f"{bins[i]:.1f}-{bins[i+1]:.1f}", 'count': int(counts[i])} for i in range(len(counts))]
+
         analytics = {
-            'avg_price_by_make': self.df.groupby('make')['price'].mean().fillna(0).to_dict(),
-            'body_type_distribution': self.df['body_type'].value_counts().to_dict(),
-            'fuel_type_distribution': self.df['fuel_type'].value_counts().to_dict(),
-            'avg_mileage_by_fuel': self.df.groupby('fuel_type')['fuel_economy'].mean().fillna(0).to_dict(),
-            'price_vs_hp': self.df[['price', 'engine_size', 'model']].fillna(0).to_dict(orient='records')
+            'overview': overview,
+            'distributions': {
+                'body': body_dist.to_dict(orient='records'),
+                'fuel': fuel_dist.to_dict(orient='records'),
+                'transmission': trans_dist.to_dict(orient='records')
+            },
+            'safety': safety_by_brand.to_dict(orient='records'),
+            'brand_overview': brand_stats.to_dict(orient='records'),
+            'scatter': scatter,
+            'performance': eval_scores,
+            'recommended_popular': self.df.sort_values(by='safety_rating', ascending=False).head(5)[['make', 'model', 'safety_rating']].to_dict(orient='records')
         }
         return analytics
 

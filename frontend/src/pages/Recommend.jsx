@@ -1,7 +1,7 @@
 import { API_BASE } from '../config';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Search, Info, Fuel, Settings, Users, Star, Activity, CheckCircle, AlertTriangle, ChevronDown, ChevronUp, Zap } from 'lucide-react';
+import { Search, Info, Fuel, Settings, Users, Star, Activity, CheckCircle, AlertTriangle, ChevronDown, ChevronUp, Zap, Car } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
@@ -45,12 +45,12 @@ const MiniBarChart = ({ car }) => {
     ];
 
     return (
-        <div style={{ marginTop: '20px', background: 'rgba(0,0,0,0.2)', padding: '12px', borderRadius: '10px' }}>
-            <div style={{ fontSize: '0.75rem', color: '#94a3b8', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '1px' }}>Model Confidence Breakdown</div>
+        <div style={{ marginTop: '20px', background: 'var(--background)', padding: '12px', borderRadius: '10px', border: '1px solid var(--border)' }}>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>Model Confidence Breakdown</div>
             {stats.map(s => (
                 <div key={s.label} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '6px' }}>
-                    <div style={{ width: '70px', fontSize: '0.7rem', color: '#cbd5e1' }}>{s.label}</div>
-                    <div style={{ flex: 1, height: '6px', background: 'rgba(255,255,255,0.1)', borderRadius: '3px', overflow: 'hidden' }}>
+                    <div style={{ width: '70px', fontSize: '0.7rem', color: 'var(--foreground)', opacity: 0.8 }}>{s.label}</div>
+                    <div style={{ flex: 1, height: '6px', background: 'rgba(0,0,0,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
                         <motion.div 
                             initial={{ width: 0 }}
                             animate={{ width: `${s.val}%` }}
@@ -58,7 +58,7 @@ const MiniBarChart = ({ car }) => {
                             style={{ height: '100%', background: 'linear-gradient(90deg, #6366f1, #a855f7)', borderRadius: '3px' }}
                         />
                     </div>
-                    <div style={{ width: '25px', fontSize: '0.7rem', color: '#94a3b8', textAlign: 'right' }}>{s.val.toFixed(0)}</div>
+                    <div style={{ width: '25px', fontSize: '0.7rem', color: 'var(--text-muted)', textAlign: 'right' }}>{s.val.toFixed(0)}</div>
                 </div>
             ))}
         </div>
@@ -78,6 +78,7 @@ const Recommend = () => {
     
     const [allCars, setAllCars] = useState([]);
     const [results, setResults] = useState([]);
+    const [hasRun, setHasRun] = useState(false);
     const [loading, setLoading] = useState(false);
     const [expandedCar, setExpandedCar] = useState(null);
     const [showAIExplanation, setShowAIExplanation] = useState(false);
@@ -147,6 +148,7 @@ const Recommend = () => {
             console.error("Error fetching recommendations:", error);
         } finally {
             setLoading(false);
+            setHasRun(true);
             setLoadingProgress(0);
         }
     };
@@ -248,7 +250,6 @@ const Recommend = () => {
                         >
                             <option value={5}>5 Seats</option>
                             <option value={7}>7 Seats</option>
-                            <option value={8}>8 Seats</option>
                             <option value={4}>4 Seats</option>
                         </select>
                     </div>
@@ -268,7 +269,7 @@ const Recommend = () => {
                         className="btn btn-primary" style={{ width: '100%', marginTop: '30px' }}
                         onClick={handleSearch} disabled={loading}
                     >
-                        {loading ? 'Analyzing Data...' : 'Run ML Model'}
+                        {loading ? 'Analyzing...' : 'Analyze'}
                     </button>
                 </aside>
 
@@ -299,13 +300,65 @@ const Recommend = () => {
                                 Analyzing
                             </motion.h3>
 
-                            {/* Progress bar */}
-                            <div style={{ width: '320px', height: '6px', background: 'rgba(255,255,255,0.08)', borderRadius: '3px', overflow: 'hidden', marginBottom: '20px' }}>
+                            {/* Car Animation Progress */}
+                            <div style={{ width: '400px', height: '60px', position: 'relative', marginBottom: '20px' }}>
+                                {/* Road / Track */}
+                                <div style={{ position: 'absolute', bottom: '15px', left: 0, width: '100%', height: '2px', background: 'rgba(255,255,255,0.05)', borderRadius: '2px' }} />
+                                
+                                {/* Trail */}
                                 <motion.div 
                                     animate={{ width: `${loadingProgress}%` }}
                                     transition={{ duration: 0.5 }}
-                                    style={{ height: '100%', background: 'linear-gradient(90deg, #6366f1, #a855f7)', borderRadius: '3px' }}
+                                    style={{ 
+                                        position: 'absolute', 
+                                        bottom: '15px', 
+                                        left: 0, 
+                                        height: '3px', 
+                                        background: 'linear-gradient(90deg, transparent, #6366f1)', 
+                                        borderRadius: '2px',
+                                        boxShadow: '0 0 15px rgba(99, 102, 241, 0.5)'
+                                    }} 
                                 />
+
+                                {/* Moving Car */}
+                                <motion.div
+                                    animate={{ left: `${loadingProgress}%` }}
+                                    transition={{ duration: 0.5 }}
+                                    style={{ 
+                                        position: 'absolute', 
+                                        bottom: '10px', 
+                                        transform: 'translateX(-50%)',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center'
+                                    }}
+                                >
+                                    <div style={{ position: 'relative' }}>
+                                        {/* Speed lines */}
+                                        <motion.div 
+                                            animate={{ x: [-5, 0, -5], opacity: [0.3, 0.7, 0.3] }}
+                                            transition={{ repeat: Infinity, duration: 0.2 }}
+                                            style={{ position: 'absolute', left: '-15px', top: '50%', transform: 'translateY(-50%)' }}
+                                        >
+                                            <div style={{ width: '8px', height: '1px', background: '#818cf8', marginBottom: '3px' }} />
+                                            <div style={{ width: '12px', height: '1px', background: '#818cf8' }} />
+                                        </motion.div>
+
+                                        <Car size={32} color="#818cf8" fill="rgba(99, 102, 241, 0.2)" />
+                                        
+                                        {/* Wheel Glow */}
+                                        <motion.div 
+                                            animate={{ opacity: [0.4, 0.8, 0.4] }}
+                                            transition={{ repeat: Infinity, duration: 0.1 }}
+                                            style={{ position: 'absolute', bottom: '-2px', left: '4px', width: '6px', height: '2px', background: '#6366f1', filter: 'blur(2px)' }}
+                                        />
+                                        <motion.div 
+                                            animate={{ opacity: [0.4, 0.8, 0.4] }}
+                                            transition={{ repeat: Infinity, duration: 0.1, delay: 0.05 }}
+                                            style={{ position: 'absolute', bottom: '-2px', right: '4px', width: '6px', height: '2px', background: '#6366f1', filter: 'blur(2px)' }}
+                                        />
+                                    </div>
+                                </motion.div>
                             </div>
 
                             {/* Stage message */}
@@ -328,13 +381,6 @@ const Recommend = () => {
                                 <div style={{ fontSize: '0.85rem', color: '#94a3b8' }}>Showing top {results.length} matched outcomes</div>
                             </motion.div>
 
-                            {/* Refine Chips */}
-                            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '30px' }}>
-                                {prefs.transmission !== 'Automatic' && <button className="btn btn-secondary" style={{ padding: '6px 15px', fontSize: '0.8rem', background: 'rgba(255,255,255,0.05)' }} onClick={() => handleSearch(null, {...prefs, transmission: 'Automatic'})}>[ + Requires Automatic ]</button>}
-                                {prefs.seating_capacity !== 7 && <button className="btn btn-secondary" style={{ padding: '6px 15px', fontSize: '0.8rem', background: 'rgba(255,255,255,0.05)' }} onClick={() => handleSearch(null, {...prefs, seating_capacity: 7})}>[ + Requires 7 Seats ]</button>}
-                                <button className="btn btn-secondary" style={{ padding: '6px 15px', fontSize: '0.8rem', background: 'rgba(255,255,255,0.05)' }} onClick={() => handleSearch(null, {...prefs, fuel_type: prefs.fuel_type === 'Petrol' ? 'Diesel' : 'Petrol'})}>[ Swap to {prefs.fuel_type === 'Petrol' ? 'Diesel' : 'Petrol'} ]</button>
-                            </div>
-
                             <div className="grid-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(380px, 1fr))', gap: '20px' }}>
                                 <AnimatePresence mode="popLayout">
                                     {results.map((car, idx) => (
@@ -348,7 +394,7 @@ const Recommend = () => {
                                             className="glass car-card"
                                             style={{ cursor: 'pointer' }}
                                         >
-                                            <div className="car-image" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('${car.image_url || "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=600"}')` }}>
+                                            <div className="car-image" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('${car.image_url ? `/cars/${car.image_url}` : "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=600"}')` }}>
                                                 <div className="car-price">₹{car.price.toLocaleString()}</div>
                                                 <div style={{ position: 'absolute', top: '15px', left: '15px' }}>
                                                     <CircularProgress score={car.score} />
@@ -387,13 +433,13 @@ const Recommend = () => {
                                                                 exit={{ height: 0, opacity: 0 }}
                                                                 style={{ overflow: 'hidden', marginTop: '10px' }}
                                                             >
-                                                                <div style={{ background: 'rgba(0,0,0,0.2)', padding: '12px', borderRadius: '8px', fontSize: '0.8rem', color: '#cbd5e1' }}>
+                                                                <div style={{ background: 'var(--background)', padding: '12px', borderRadius: '8px', border: '1px solid var(--border)', fontSize: '0.8rem', color: 'var(--foreground)' }}>
                                                                     {generateWhyMatch(car).map((match, i) => (
                                                                         <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
                                                                             {match.icon} {match.text}
                                                                         </div>
                                                                     ))}
-                                                                    <div style={{ marginTop: '10px', paddingTop: '10px', borderTop: '1px solid rgba(255,255,255,0.05)', fontStyle: 'italic', color: '#94a3b8' }}>
+                                                                    <div style={{ marginTop: '10px', paddingTop: '10px', borderTop: '1px solid var(--border)', fontStyle: 'italic', color: 'var(--text-muted)' }}>
                                                                         "{car.reason}"
                                                                     </div>
                                                                 </div>
@@ -443,7 +489,14 @@ const Recommend = () => {
                     ) : (
                         <div className="glass" style={{ height: '400px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: '#94a3b8' }}>
                             <Search size={48} style={{ marginBottom: '20px', opacity: 0.3 }} />
-                            <p>No matches yet. Click "Run ML Model" to execute the algorithm.</p>
+                            {hasRun ? (
+                                <div style={{ maxWidth: '400px' }}>
+                                    <h3 style={{ color: '#fff', marginBottom: '10px' }}>No Exact Matches Found</h3>
+                                    <p>Our strict category filtering ensures results match your segment 100%. Try broadening your search or adjusting your fuel type preferences.</p>
+                                </div>
+                            ) : (
+                                <p>No matches yet. Click "Analyze" to execute the algorithm.</p>
+                            )}
                         </div>
                     )}
                 </main>

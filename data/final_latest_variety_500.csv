@@ -7,17 +7,17 @@ id,name,brand,price,mileage,fuel_type,transmission,seating_capacity,body_type,ra
 99.0,Hyundai Verna 2025,Hyundai,1544905.97,19.14,Petrol,Manual,5,Sedan,4.8,"City,Long Drive",ADAS|Sunroof|Airbags|Bose Audio,1497.0,5.0,2025,/cars/hyundai_verna_2025.jpg,Base
 62.0,Mahindra XUV700 2025,Mahindra,1972383.39,16.79,Petrol,Automatic,7,SUV,4.8,"Family,Long Drive",ADAS|Panoramic Sunroof|Airbags|Cruise Control,2198.0,5.0,2025,/cars/mahindra_xuv700_2025.jpg,Mid
 74.0,Tata Harrier 2025,Tata,1705784.75,15.66,Petrol,Automatic,5,SUV,4.7,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2025,/cars/tata_harrier_2025.jpg,Mid
-102.0,Tata Tiago EV 2025,Tata,1042430.8,323.53,Petrol,Automatic,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,/cars/tata_tiago_ev_2025.jpg,Top
+102.0,Tata Tiago EV 2025,Tata,1042430.8,323.53,Electric,Automatic,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,/cars/tata_tiago_ev_2025.jpg,Top
 54.0,Maruti Suzuki Dzire 2025,Maruti Suzuki,733353.0,22.6,Petrol,Manual,5,Sedan,4.4,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2025,/cars/maruti_suzuki_dzire_2025.jpg,
 40.0,Hyundai Venue 2025,Hyundai,1001626.37,19.14,CNG,Manual,5,SUV,4.6,"City,Family",Sunroof|Cruise Control|Airbags|Connected Car,998.0,4.0,2025,/cars/hyundai_venue_2025.jpg,Mid
-53.0,MG ZS EV 2024,MG,2084575.93,422.66,CNG,Automatic,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,/cars/mg_zs_ev_2024.jpg,Base
+53.0,MG ZS EV 2024,MG,2084575.93,422.66,Electric,Automatic,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,/cars/mg_zs_ev_2024.jpg,Base
 76.0,Maruti Suzuki Baleno 2024,Maruti Suzuki,883966.6,21.07,Petrol,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2024,/cars/maruti_suzuki_baleno_2024.jpg,Top
 103.0,Honda Amaze 2024,Honda,871110.45,20.23,Diesel,Automatic,5,Sedan,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1199.0,4.0,2024,/cars/honda_amaze_2024.jpg,Mid
 90.0,Volkswagen Virtus 2024,Volkswagen,1477544.53,20.87,Petrol,Automatic,5,Sedan,4.8,"City,Long Drive",Digital Cockpit|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,/cars/volkswagen_virtus_2024.jpg,Mid
 105.0,Skoda Slavia 2024,Skoda,1027428.88,19.06,CNG,Automatic,5,Sedan,4.8,"City,Long Drive",Sunroof|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,/cars/skoda_slavia_2024.jpg,Mid
 61.0,Kia Seltos 2024,Kia,1184467.0,17.69,CNG,Manual,5,SUV,4.6,"Family,Long Drive",Sunroof|Cruise Control|Airbags|ADAS,1497.0,5.0,2024,/cars/kia_seltos_2024.jpg,Base
 20.0,Nissan Magnite,Nissan,599000.0,18.8,Petrol,Manual,5,SUV,4.3,"City,Family",360 Camera|Wireless Charger|JBL Audio|Air Purifier,999.0,4.0,2023,/cars/nissan_magnite.jpg,
-25.0,Honda Elevate,Honda,1308439.32,18.33,Diesel,Automatic,5,SUV,4.5,"Family,City",Lane Keep Assist|ADAS|Wireless Charging|Sunroof,1498.0,5.0,2023,/cars/honda_elevate.jpg,Base
+25.0,Honda Elevate,Honda,1308439.32,18.33,Petrol,Automatic,5,SUV,4.5,"Family,City",Lane Keep Assist|ADAS|Wireless Charging|Sunroof,1498.0,5.0,2023,/cars/honda_elevate.jpg,Base
 2.0,Hyundai Creta,Hyundai,1058541.46,17.82,Petrol,Manual,5,SUV,4.7,"Family,Long Drive",Sunroof|Cruise Control|Touchscreen|Climate Control,1493.0,5.0,2023,/cars/hyundai_creta.jpg,Mid
 22.0,Hyundai i20,Hyundai,877695.66,19.92,Diesel,Automatic,5,Hatchback,4.4,"City,Family",BlueLink|Sunroof|Wireless Charging|Digital Cluster,998.0,4.0,2023,/cars/hyundai_i20.jpg,Top
 7.0,Toyota Fortuner,Toyota,3024397.03,15.25,Petrol,Automatic,7,SUV,4.9,"Family,Long Drive,Off-road",4WD|Leather Seats|Premium Audio|Adaptive Cruise,2755.0,5.0,2023,/cars/toyota_fortuner.jpg,Base
@@ -31,7 +31,7 @@ id,name,brand,price,mileage,fuel_type,transmission,seating_capacity,body_type,ra
 8.0,Maruti Altok10,Maruti Suzuki,349000.0,22.5,Petrol,Manual,5,Hatchback,4.2,City,Compact Design|Fuel Efficient|Easy Parking,796.0,3.0,2023,/cars/maruti_suzuki_maruti_altok10.jpg,
 27.0,Toyota Innova Crysta,Toyota,1736465.79,16.69,CNG,Automatic,7,MUV,4.8,"Family,Long Drive",Premium Interior|Captain Seats|Spacious|Reliable,2393.0,5.0,2023,/cars/toyota_innova_crysta.jpg,Mid
 28.0,Maruti Brezza,Maruti Suzuki,922482.33,20.35,Diesel,Automatic,5,SUV,4.5,"City,Family",Head-up Display|360 Camera|Sunroof|Connected Car,1462.0,4.0,2023,/cars/maruti_suzuki_maruti_brezza.jpg,Top
-3.0,Tata Nexon EV,Tata,1432224.16,272.14,Diesel,Automatic,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,/cars/tata_nexon_ev.jpg,Top
+3.0,Tata Nexon EV,Tata,1432224.16,272.14,Electric,Automatic,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,/cars/tata_nexon_ev.jpg,Top
 72.0,Tata Safari 2023,Tata,1986318.09,15.95,CNG,Automatic,7,SUV,4.4,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2023,/cars/tata_safari_2023.jpg,Base
 5.0,Mahindra Thar,Mahindra,1591225.21,15.95,CNG,Manual,4,SUV,4.8,"Off-road,Long Drive",4x4|Convertible Top|Off-road Tyres|Hill Assist,2184.0,4.0,2023,/cars/mahindra_thar.jpg,Top
 30.0,Kia Carens,Kia,1032749.47,17.71,CNG,Manual,7,MUV,4.6,"Family,Long Drive",6/7 Seater|Ventilated Seats|UVO Connect|Sunroof,1497.0,5.0,2023,/cars/kia_carens.jpg,Mid
@@ -45,17 +45,17 @@ id,name,brand,price,mileage,fuel_type,transmission,seating_capacity,body_type,ra
 99.0,Hyundai Verna 2025,Hyundai,1679294.53,20.7,Petrol,Manual,5,Sedan,4.8,"City,Long Drive",ADAS|Sunroof|Airbags|Bose Audio,1497.0,5.0,2025,/cars/hyundai_verna_2025.jpg,Top
 62.0,Mahindra XUV700 2025,Mahindra,2247128.8,18.1,Petrol,Manual,7,SUV,4.8,"Family,Long Drive",ADAS|Panoramic Sunroof|Airbags|Cruise Control,2198.0,5.0,2025,/cars/mahindra_xuv700_2025.jpg,Mid
 74.0,Tata Harrier 2025,Tata,1588537.07,15.9,CNG,Manual,5,SUV,4.7,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2025,/cars/tata_harrier_2025.jpg,Mid
-102.0,Tata Tiago EV 2025,Tata,1024209.04,338.7,Petrol,Automatic,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,/cars/tata_tiago_ev_2025.jpg,Top
+102.0,Tata Tiago EV 2025,Tata,1024209.04,338.7,Electric,Automatic,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,/cars/tata_tiago_ev_2025.jpg,Top
 54.0,Maruti Suzuki Dzire 2025,Maruti Suzuki,694138.28,24.4,Petrol,Automatic,5,Sedan,4.4,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2025,/cars/maruti_suzuki_dzire_2025.jpg,Mid
 40.0,Hyundai Venue 2025,Hyundai,1083035.96,18.4,Petrol,Automatic,5,SUV,4.6,"City,Family",Sunroof|Cruise Control|Airbags|Connected Car,998.0,4.0,2025,/cars/hyundai_venue_2025.jpg,Mid
-53.0,MG ZS EV 2024,MG,2036308.55,416.9,CNG,Manual,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,/cars/mg_zs_ev_2024.jpg,Base
+53.0,MG ZS EV 2024,MG,2036308.55,416.9,Electric,Manual,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,/cars/mg_zs_ev_2024.jpg,Base
 76.0,Maruti Suzuki Baleno 2024,Maruti Suzuki,976957.13,20.9,CNG,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2024,/cars/maruti_suzuki_baleno_2024.jpg,Mid
 103.0,Honda Amaze 2024,Honda,801388.79,18.4,CNG,Automatic,5,Sedan,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1199.0,4.0,2024,/cars/honda_amaze_2024.jpg,Top
 90.0,Volkswagen Virtus 2024,Volkswagen,1365945.76,22.0,Diesel,Manual,5,Sedan,4.8,"City,Long Drive",Digital Cockpit|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,/cars/volkswagen_virtus_2024.jpg,Top
 105.0,Skoda Slavia 2024,Skoda,1026048.79,18.1,Diesel,Automatic,5,Sedan,4.8,"City,Long Drive",Sunroof|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,/cars/skoda_slavia_2024.jpg,Mid
 61.0,Kia Seltos 2024,Kia,1183050.51,17.1,Diesel,Automatic,5,SUV,4.6,"Family,Long Drive",Sunroof|Cruise Control|Airbags|ADAS,1497.0,5.0,2024,/cars/kia_seltos_2024.jpg,Base
 20.0,Nissan Magnite,Nissan,547678.28,20.3,Diesel,Automatic,5,SUV,4.3,"City,Family",360 Camera|Wireless Charger|JBL Audio|Air Purifier,999.0,4.0,2023,/cars/nissan_magnite.jpg,Top
-25.0,Honda Elevate,Honda,1331069.24,18.4,Diesel,Manual,5,SUV,4.5,"Family,City",Lane Keep Assist|ADAS|Wireless Charging|Sunroof,1498.0,5.0,2023,/cars/honda_elevate.jpg,Top
+25.0,Honda Elevate,Honda,1331069.24,18.4,Petrol,Manual,5,SUV,4.5,"Family,City",Lane Keep Assist|ADAS|Wireless Charging|Sunroof,1498.0,5.0,2023,/cars/honda_elevate.jpg,Top
 2.0,Hyundai Creta,Hyundai,1037404.8,18.6,Diesel,Automatic,5,SUV,4.7,"Family,Long Drive",Sunroof|Cruise Control|Touchscreen|Climate Control,1493.0,5.0,2023,/cars/hyundai_creta.jpg,Mid
 22.0,Hyundai i20,Hyundai,817098.61,20.1,Diesel,Manual,5,Hatchback,4.4,"City,Family",BlueLink|Sunroof|Wireless Charging|Digital Cluster,998.0,4.0,2023,/cars/hyundai_i20.jpg,Base
 7.0,Toyota Fortuner,Toyota,3016009.62,16.1,Petrol,Automatic,7,SUV,4.9,"Family,Long Drive,Off-road",4WD|Leather Seats|Premium Audio|Adaptive Cruise,2755.0,5.0,2023,/cars/toyota_fortuner.jpg,Mid
@@ -69,7 +69,7 @@ id,name,brand,price,mileage,fuel_type,transmission,seating_capacity,body_type,ra
 8.0,Maruti Altok10,Maruti Suzuki,320617.98,24.7,Petrol,Manual,5,Hatchback,4.2,City,Compact Design|Fuel Efficient|Easy Parking,796.0,3.0,2023,/cars/maruti_suzuki_maruti_altok10.jpg,Mid
 27.0,Toyota Innova Crysta,Toyota,1651159.84,15.2,CNG,Automatic,7,MUV,4.8,"Family,Long Drive",Premium Interior|Captain Seats|Spacious|Reliable,2393.0,5.0,2023,/cars/toyota_innova_crysta.jpg,Mid
 28.0,Maruti Brezza,Maruti Suzuki,940710.12,20.2,Petrol,Automatic,5,SUV,4.5,"City,Family",Head-up Display|360 Camera|Sunroof|Connected Car,1462.0,4.0,2023,/cars/maruti_suzuki_maruti_brezza.jpg,Mid
-3.0,Tata Nexon EV,Tata,1437200.96,286.3,Petrol,Automatic,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,/cars/tata_nexon_ev.jpg,Base
+3.0,Tata Nexon EV,Tata,1437200.96,286.3,Electric,Automatic,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,/cars/tata_nexon_ev.jpg,Base
 72.0,Tata Safari 2023,Tata,1838333.74,17.0,Petrol,Automatic,7,SUV,4.4,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2023,/cars/tata_safari_2023.jpg,Base
 5.0,Mahindra Thar,Mahindra,1662257.15,15.7,Diesel,Manual,4,SUV,4.8,"Off-road,Long Drive",4x4|Convertible Top|Off-road Tyres|Hill Assist,2184.0,4.0,2023,/cars/mahindra_thar.jpg,Mid
 30.0,Kia Carens,Kia,1177038.64,19.3,CNG,Manual,7,MUV,4.6,"Family,Long Drive",6/7 Seater|Ventilated Seats|UVO Connect|Sunroof,1497.0,5.0,2023,/cars/kia_carens.jpg,Top
@@ -83,10 +83,10 @@ id,name,brand,price,mileage,fuel_type,transmission,seating_capacity,body_type,ra
 99.0,Hyundai Verna 2025,Hyundai,1648685.32,20.8,Petrol,Automatic,5,Sedan,4.8,"City,Long Drive",ADAS|Sunroof|Airbags|Bose Audio,1497.0,5.0,2025,/cars/hyundai_verna_2025.jpg,Base
 62.0,Mahindra XUV700 2025,Mahindra,1986746.86,16.2,Diesel,Manual,7,SUV,4.8,"Family,Long Drive",ADAS|Panoramic Sunroof|Airbags|Cruise Control,2198.0,5.0,2025,/cars/mahindra_xuv700_2025.jpg,Mid
 74.0,Tata Harrier 2025,Tata,1835119.63,14.1,Petrol,Automatic,5,SUV,4.7,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2025,/cars/tata_harrier_2025.jpg,Top
-102.0,Tata Tiago EV 2025,Tata,1041385.52,317.2,Diesel,Manual,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,/cars/tata_tiago_ev_2025.jpg,Mid
+102.0,Tata Tiago EV 2025,Tata,1041385.52,317.2,Electric,Manual,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,/cars/tata_tiago_ev_2025.jpg,Mid
 54.0,Maruti Suzuki Dzire 2025,Maruti Suzuki,833855.84,24.7,Petrol,Manual,5,Sedan,4.4,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2025,/cars/maruti_suzuki_dzire_2025.jpg,Mid
 40.0,Hyundai Venue 2025,Hyundai,1125482.03,19.5,Petrol,Automatic,5,SUV,4.6,"City,Family",Sunroof|Cruise Control|Airbags|Connected Car,998.0,4.0,2025,/cars/hyundai_venue_2025.jpg,Top
-53.0,MG ZS EV 2024,MG,2367933.42,456.0,Diesel,Automatic,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,/cars/mg_zs_ev_2024.jpg,Mid
+53.0,MG ZS EV 2024,MG,2367933.42,456.0,Electric,Automatic,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,/cars/mg_zs_ev_2024.jpg,Mid
 76.0,Maruti Suzuki Baleno 2024,Maruti Suzuki,915911.12,19.5,CNG,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2024,/cars/maruti_suzuki_baleno_2024.jpg,Top
 103.0,Honda Amaze 2024,Honda,950478.75,19.9,CNG,Automatic,5,Sedan,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1199.0,4.0,2024,/cars/honda_amaze_2024.jpg,Top
 90.0,Volkswagen Virtus 2024,Volkswagen,1676762.35,21.4,Petrol,Automatic,5,Sedan,4.8,"City,Long Drive",Digital Cockpit|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,/cars/volkswagen_virtus_2024.jpg,Mid
@@ -107,7 +107,7 @@ id,name,brand,price,mileage,fuel_type,transmission,seating_capacity,body_type,ra
 8.0,Maruti Altok10,Maruti Suzuki,342570.2,21.6,Diesel,Automatic,5,Hatchback,4.2,City,Compact Design|Fuel Efficient|Easy Parking,796.0,3.0,2023,/cars/maruti_suzuki_maruti_altok10.jpg,Base
 27.0,Toyota Innova Crysta,Toyota,1826547.69,15.7,CNG,Manual,7,MUV,4.8,"Family,Long Drive",Premium Interior|Captain Seats|Spacious|Reliable,2393.0,5.0,2023,/cars/toyota_innova_crysta.jpg,Mid
 28.0,Maruti Brezza,Maruti Suzuki,946623.17,20.9,CNG,Automatic,5,SUV,4.5,"City,Family",Head-up Display|360 Camera|Sunroof|Connected Car,1462.0,4.0,2023,/cars/maruti_suzuki_maruti_brezza.jpg,Mid
-3.0,Tata Nexon EV,Tata,1300243.52,278.7,Diesel,Manual,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,/cars/tata_nexon_ev.jpg,Base
+3.0,Tata Nexon EV,Tata,1300243.52,278.7,Electric,Manual,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,/cars/tata_nexon_ev.jpg,Base
 72.0,Tata Safari 2023,Tata,2082804.52,15.5,Diesel,Automatic,7,SUV,4.4,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2023,/cars/tata_safari_2023.jpg,Base
 5.0,Mahindra Thar,Mahindra,1684333.81,15.5,Petrol,Manual,4,SUV,4.8,"Off-road,Long Drive",4x4|Convertible Top|Off-road Tyres|Hill Assist,2184.0,4.0,2023,/cars/mahindra_thar.jpg,Base
 30.0,Kia Carens,Kia,1170403.82,17.8,Diesel,Manual,7,MUV,4.6,"Family,Long Drive",6/7 Seater|Ventilated Seats|UVO Connect|Sunroof,1497.0,5.0,2023,/cars/kia_carens.jpg,Top
@@ -121,10 +121,10 @@ id,name,brand,price,mileage,fuel_type,transmission,seating_capacity,body_type,ra
 99.0,Hyundai Verna 2025,Hyundai,1628116.65,18.4,CNG,Automatic,5,Sedan,4.8,"City,Long Drive",ADAS|Sunroof|Airbags|Bose Audio,1497.0,5.0,2025,/cars/hyundai_verna_2025.jpg,Top
 62.0,Mahindra XUV700 2025,Mahindra,2177807.01,16.3,Diesel,Automatic,7,SUV,4.8,"Family,Long Drive",ADAS|Panoramic Sunroof|Airbags|Cruise Control,2198.0,5.0,2025,/cars/mahindra_xuv700_2025.jpg,Mid
 74.0,Tata Harrier 2025,Tata,1635185.7,14.3,Petrol,Manual,5,SUV,4.7,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2025,/cars/tata_harrier_2025.jpg,Top
-102.0,Tata Tiago EV 2025,Tata,951585.74,323.5,CNG,Automatic,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,/cars/tata_tiago_ev_2025.jpg,Top
+102.0,Tata Tiago EV 2025,Tata,951585.74,323.5,Electric,Automatic,5,Hatchback,4.3,"City,Family",Fast Charging|Airbags|Touchscreen|Connected Car,0.0,4.0,2025,/cars/tata_tiago_ev_2025.jpg,Top
 54.0,Maruti Suzuki Dzire 2025,Maruti Suzuki,793916.52,22.1,Petrol,Manual,5,Sedan,4.4,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2025,/cars/maruti_suzuki_dzire_2025.jpg,Top
 40.0,Hyundai Venue 2025,Hyundai,1014442.85,18.6,Diesel,Manual,5,SUV,4.6,"City,Family",Sunroof|Cruise Control|Airbags|Connected Car,998.0,4.0,2025,/cars/hyundai_venue_2025.jpg,Mid
-53.0,MG ZS EV 2024,MG,2102944.25,385.3,Petrol,Manual,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,/cars/mg_zs_ev_2024.jpg,Base
+53.0,MG ZS EV 2024,MG,2102944.25,385.3,Electric,Manual,5,SUV,4.6,"City,Family",Fast Charging|Airbags|Connected Car|Sunroof,0.0,5.0,2024,/cars/mg_zs_ev_2024.jpg,Base
 76.0,Maruti Suzuki Baleno 2024,Maruti Suzuki,989875.31,22.2,Diesel,Manual,5,Hatchback,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1197.0,4.0,2024,/cars/maruti_suzuki_baleno_2024.jpg,Top
 103.0,Honda Amaze 2024,Honda,951089.09,18.3,Petrol,Manual,5,Sedan,4.6,"City,Family",ABS|Airbags|Touchscreen|AC,1199.0,4.0,2024,/cars/honda_amaze_2024.jpg,Top
 90.0,Volkswagen Virtus 2024,Volkswagen,1487539.67,22.3,Diesel,Automatic,5,Sedan,4.8,"City,Long Drive",Digital Cockpit|Airbags|Touchscreen|Cruise Control,1498.0,5.0,2024,/cars/volkswagen_virtus_2024.jpg,Top
@@ -145,7 +145,7 @@ id,name,brand,price,mileage,fuel_type,transmission,seating_capacity,body_type,ra
 8.0,Maruti Altok10,Maruti Suzuki,330966.13,22.3,Petrol,Manual,5,Hatchback,4.2,City,Compact Design|Fuel Efficient|Easy Parking,796.0,3.0,2023,/cars/maruti_suzuki_maruti_altok10.jpg,Base
 27.0,Toyota Innova Crysta,Toyota,1856583.31,15.8,Diesel,Manual,7,MUV,4.8,"Family,Long Drive",Premium Interior|Captain Seats|Spacious|Reliable,2393.0,5.0,2023,/cars/toyota_innova_crysta.jpg,Top
 28.0,Maruti Brezza,Maruti Suzuki,969107.96,18.8,CNG,Manual,5,SUV,4.5,"City,Family",Head-up Display|360 Camera|Sunroof|Connected Car,1462.0,4.0,2023,/cars/maruti_suzuki_maruti_brezza.jpg,Top
-3.0,Tata Nexon EV,Tata,1352064.1,271.6,Diesel,Automatic,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,/cars/tata_nexon_ev.jpg,Top
+3.0,Tata Nexon EV,Tata,1352064.1,271.6,Electric,Automatic,5,SUV,4.6,"City,Family",Regenerative Braking|Fast Charging|Connected Car|iRA AI,0.0,5.0,2023,/cars/tata_nexon_ev.jpg,Top
 72.0,Tata Safari 2023,Tata,2021520.51,14.4,Petrol,Automatic,7,SUV,4.4,"Family,Long Drive",Panoramic Sunroof|Airbags|Cruise Control|JBL Audio,1956.0,5.0,2023,/cars/tata_safari_2023.jpg,Base
 5.0,Mahindra Thar,Mahindra,1700354.39,16.6,Petrol,Automatic,4,SUV,4.8,"Off-road,Long Drive",4x4|Convertible Top|Off-road Tyres|Hill Assist,2184.0,4.0,2023,/cars/mahindra_thar.jpg,Base
 30.0,Kia Carens,Kia,1008103.24,17.5,Petrol,Automatic,7,MUV,4.6,"Family,Long Drive",6/7 Seater|Ventilated Seats|UVO Connect|Sunroof,1497.0,5.0,2023,/cars/kia_carens.jpg,Top

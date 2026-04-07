@@ -274,7 +274,17 @@ const Explore = () => {
                                 exit={{ opacity: 0, scale: 0.9 }}
                                 className="glass car-card"
                             >
-                                <div style={{ height: '140px', background: `linear-gradient(45deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9)), url('${car.image_url || "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=600"}')`, backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', borderBottom: '1px solid var(--glass-border)', position: 'relative' }}>
+                                <div style={{ 
+                                    height: '140px', 
+                                    backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('${car.image_url ? `/cars/${car.image_url}` : "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=600"}')`, 
+                                    backgroundSize: 'cover', 
+                                    backgroundPosition: 'center', 
+                                    display: 'flex', 
+                                    alignItems: 'center', 
+                                    justifyContent: 'center', 
+                                    borderBottom: '1px solid var(--glass-border)', 
+                                    position: 'relative' 
+                                }}>
                                     <div style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
                                         <div style={{ fontSize: '2rem', fontWeight: 800, color: 'rgba(255,255,255,0.3)' }}>{car.make}</div>
                                         <div style={{ marginTop: '-15px', color: '#818cf8', fontWeight: 700 }}>{car.model}</div>

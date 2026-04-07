@@ -20,7 +20,7 @@ app.add_middleware(
 )
 
 # Initialize recommender
-data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../data/final_latest_variety_500.csv"))
+data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../data/final_500_cars_dataset.csv"))
 recommender = CarRecommender(data_path)
 
 class UserPreferences(BaseModel):
@@ -89,10 +89,12 @@ def ai_chat(req: ChatRequest):
     intents = {
         "budget": None,
         "brands": [],
+        "models": [],
         "body_types": [],
         "fuel_types": [],
         "transmission": None,
-        "priority": "rating"
+        "priority": "rating",
+        "is_comparison": any(x in query for x in ["better", "vs", "compare", "comparison", "between", "which is best", "difference"])
     }
     
     # Extract Budget
@@ -101,10 +103,18 @@ def ai_chat(req: ChatRequest):
         val = int(prices[0])
         intents["budget"] = val * 100000 if val < 100 else val
 
-    # Extract Categories
+    # Extract Brands
     possible_brands = df['make'].unique().tolist()
     intents["brands"] = [b for b in possible_brands if b.lower() in query]
     
+    # Extract Models (Better partial matching)
+    possible_models = df['model'].unique().tolist()
+    for m in possible_models:
+        m_low = m.lower()
+        # If model name is in query or if significant parts of the model name are in query
+        if m_low in query or (len(m_low) > 3 and m_low.split()[0] in query):
+            intents["models"].append(m)
+
     body_map = {"suv": "SUV", "sedan": "Sedan", "hatch": "Hatchback", "truck": "Truck", "coupe": "Coupe"}
     intents["body_types"] = [v for k, v in body_map.items() if k in query]
     
@@ -120,9 +130,61 @@ def ai_chat(req: ChatRequest):
 
     # 2. PERFORM ANALYSIS
     # -------------------
+    # HANDLE COMPARISON INTENT
+    if intents["is_comparison"]:
+        # Identify the primary models for comparison
+        comp_cars = df[df['model'].isin(intents["models"])].copy()
+        
+        # If we have brands but no specific models, find a popular model for each brand
+        if intents["brands"]:
+            for brand in intents["brands"]:
+                if brand not in [c['make'] for _, c in comp_cars.iterrows()]:
+                    brand_models = df[df['make'] == brand].sort_values(by='rating', ascending=False)
+                    if not brand_models.empty:
+                        comp_cars = pd.concat([comp_cars, brand_models.head(1)])
+        
+        comp_cars = comp_cars.drop_duplicates(subset=['make', 'model']).head(2)
+        
+        if len(comp_cars) >= 2:
+            c1 = comp_cars.iloc[0]
+            c2 = comp_cars.iloc[1]
+            
+            # Specs Comparison
+            answer = f"Comparing the {c1['make']} {c1['model']} vs {c2['make']} {c2['model']}: "
+            
+            # Safety
+            if c1['safety_rating'] > c2['safety_rating']:
+                answer += f"The {c1['model']} is safer with a {c1['safety_rating']}-star rating. "
+            elif c2['safety_rating'] > c1['safety_rating']:
+                answer += f"The {c2['model']} leads in safety with {c2['safety_rating']} stars. "
+            else:
+                answer += f"Both offer identical safety with {c1['safety_rating']} stars. "
+                
+            # Price
+            if c1['price'] < c2['price']:
+                answer += f"Budget-wise, the {c1['model']} is more affordable at ₹{c1['price']/100000:.1f} Lakh. "
+            else:
+                answer += f"The {c2['model']} is the more economical choice at ₹{c2['price']/100000:.1f} Lakh. "
+            
+            # Fuel / Mileage
+            if c1['fuel_economy'] > c2['fuel_economy']:
+                answer += f"For daily runs, the {c1['model']} offers better efficiency ({c1['fuel_economy']} km/l)."
+            else:
+                answer += f"The {c2['model']} is more fuel-efficient with {c2['fuel_economy']} km/l."
+                
+            return {
+                "answer": answer,
+                "cars": comp_cars.to_dict(orient='records')
+            }
+
+    # DEFAULT RECOMMENDATION LOGIC
     results = df.copy()
     filters_applied = []
     
+    if intents["models"]:
+        results = results[results['model'].isin(intents["models"])]
+        filters_applied.append(f"specifically the {', '.join(intents['models'])}")
+
     if intents["brands"]:
         results = results[results['make'].isin(intents["brands"])]
         filters_applied.append(f"from {', '.join(intents['brands'])}")
@@ -132,7 +194,6 @@ def ai_chat(req: ChatRequest):
         filters_applied.append(f"{', '.join(intents['body_types'])} models")
         
     if intents["fuel_types"]:
-        # Safety: exclude others if fuel type is specific
         results = results[results['fuel_type'].isin(intents["fuel_types"])]
         filters_applied.append(f"with {', '.join(intents['fuel_types'])} engines")
         
